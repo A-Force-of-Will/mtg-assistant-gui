@@ -4,6 +4,8 @@ import javafx.stage.Stage;
 import mtgassistant.view.ApiAssistantView;
 
 public class AssistantView implements ApiAssistantView {
+	
+	private Stage stage;
 
 	public Stage stage() {
 		return null;
@@ -27,6 +29,10 @@ public class AssistantView implements ApiAssistantView {
 
 	public void drawCounters() {
 		
+	}
+
+	public void setStage(Stage stage) {
+		this.stage = stage;
 	}
 	
 }
