@@ -31,6 +31,10 @@ public class AssistantView implements ApiAssistantView {
 		
 	}
 
+	public Stage getStage() {
+		return stage;
+	}
+
 	public void setStage(Stage stage) {
 		this.stage = stage;
 	}
