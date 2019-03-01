@@ -5,11 +5,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 
 
 
 <BorderPane xmlns:fx="http://javafx.com/fxml/1"
 	fx:controller="assistant.view.AssistantView">
+	<top>
+	</top>
 	<right>
 		<VBox>
 			<Label>deck</Label>
@@ -19,17 +23,27 @@
 	<left>
 		<VBox>
 			<Label>player</Label>
+			<Button GridPane.columnIndex="0" GridPane.rowIndex="0"
+				onAction="#onNumericClick">+1</Button>
+			<Button GridPane.columnIndex="0" GridPane.rowIndex="1"
+				onAction="#onNumericClick">+5</Button>
+			<Button GridPane.columnIndex="0" GridPane.rowIndex="2"
+				onAction="#onNumericClick">+10</Button>
 		</VBox>
 	</left>
 
 	<center>
 		<GridPane>
 			<GridPane fx:id="PlayerCounter" GridPane.columnIndex="0">
+				<TextField fx:id="mainTextField"></TextField>
 				<VBox>
 					<Label>Player Counters</Label>
 				</VBox>
+				<Button GridPane.columnIndex="0" GridPane.rowIndex="0"
+					onAction="#onNumericClick">+1</Button>
+
 			</GridPane>
-	
+
 			<GridPane fx:id="TokenCreator" GridPane.columnIndex="1">
 				<VBox>
 					<Label>Token Creator</Label>

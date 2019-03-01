@@ -1,5 +1,10 @@
 package assistant.view;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Labeled;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import mtgassistant.controller.AssistantController;
@@ -10,6 +15,9 @@ public class AssistantView implements ApiAssistantView {
 	private Stage stage;
 	
 	private AssistantController controller;
+
+	@FXML
+	private TextField mainTextField;
 
 	public void init() {
 		this.stage.setTitle("MTG Assistant");
@@ -33,6 +41,12 @@ public class AssistantView implements ApiAssistantView {
 		
 	}
 //***********
+	public void onNumericClick(ActionEvent e) {
+		Button b = (Button) e.getSource();
+		int number = Integer.parseInt(b.getText());
+		mainTextField.setText(mainTextField.getText() + number);
+	}
+	
 	public Stage getStage() {
 		return stage;
 	}
