@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="assistant.view.AssistantView">
+	<right>
+		<VBox>
+			<Label>deck</Label>
+		</VBox>
+	</right>
+
+	<left>
+		<VBox>
+			<Label>player</Label>
+		</VBox>
+	</left>
+
+	<center>
+		<GridPane>
+			<GridPane fx:id="PlayerCounter" GridPane.columnIndex="0">
+				<VBox>
+					<Label>Player Counters</Label>
+				</VBox>
+			</GridPane>
+	
+			<GridPane fx:id="TokenCreator" GridPane.columnIndex="1">
+				<VBox>
+					<Label>Token Creator</Label>
+				</VBox>
+			</GridPane>
+		</GridPane>
+	</center>
+
+	<bottom>
+		<HBox>
+			<Label>Copyright @ MTG lol idk</Label>
+		</HBox>
+	</bottom>
+</BorderPane>
+
