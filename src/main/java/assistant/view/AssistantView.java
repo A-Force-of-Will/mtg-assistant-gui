@@ -16,7 +16,7 @@ public class AssistantView implements ApiAssistantView {
 		this.stage.getIcons().add(new Image(this.getClass().getClassLoader().getResourceAsStream("PlaneswalkerLogo.png")));
 		this.stage.show();
 	}
-
+//********** What do any of these 'draw' methods do?
 	public void drawPlayers() {
 		
 	}
@@ -32,7 +32,7 @@ public class AssistantView implements ApiAssistantView {
 	public void drawCounters() {
 		
 	}
-
+//***********
 	public Stage getStage() {
 		return stage;
 	}
