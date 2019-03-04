@@ -24,7 +24,7 @@ public class AssistantView implements ApiAssistantView {
 		this.stage.getIcons().add(new Image(this.getClass().getClassLoader().getResourceAsStream("PlaneswalkerLogo.png")));
 		this.stage.show();
 	}
-//********** What do any of these 'draw' methods do?
+//********** What do any of these 'draw' methods do?              //**ANSWER: THEY DRAW THE BUTONS FOR THE PARTICULAR AREA THEY RESIDE IN****//
 	public void drawPlayers() {
 		
 	}

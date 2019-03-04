@@ -1,61 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
 
-
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="assistant.view.AssistantView">
-	<top>
-	</top>
-	<right>
-		<VBox>
-			<Label>deck</Label>
-		</VBox>
-	</right>
-
-	<left>
-		<VBox>
-			<Label>player</Label>
-			<Button GridPane.columnIndex="0" GridPane.rowIndex="0"
-				onAction="#onNumericClick">+1</Button>
-			<Button GridPane.columnIndex="0" GridPane.rowIndex="1"
-				onAction="#onNumericClick">+5</Button>
-			<Button GridPane.columnIndex="0" GridPane.rowIndex="2"
-				onAction="#onNumericClick">+10</Button>
-		</VBox>
-	</left>
-
-	<center>
-		<GridPane>
-			<GridPane fx:id="PlayerCounter" GridPane.columnIndex="0">
-				<TextField fx:id="mainTextField"></TextField>
-				<VBox>
-					<Label>Player Counters</Label>
-				</VBox>
-				<Button GridPane.columnIndex="0" GridPane.rowIndex="0"
-					onAction="#onNumericClick">+1</Button>
-
-			</GridPane>
-
-			<GridPane fx:id="TokenCreator" GridPane.columnIndex="1">
-				<VBox>
-					<Label>Token Creator</Label>
-				</VBox>
-			</GridPane>
-		</GridPane>
-	</center>
-
-	<bottom>
-		<HBox>
-			<Label>Copyright @ MTG lol idk</Label>
-		</HBox>
-	</bottom>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assistant.view.AssistantView">
+   <left>
+      <VBox prefHeight="428.0" prefWidth="186.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="111.0" prefWidth="186.0">
+               <children>
+                  <HBox prefHeight="105.0" prefWidth="182.0">
+                     <children>
+                        <VBox prefHeight="105.0" prefWidth="56.0">
+                           <children>
+                              <Button fx:id="p1minus10" mnemonicParsing="false" prefHeight="21.0" prefWidth="55.0" text="-10" />
+                              <Button fx:id="p1minus5" mnemonicParsing="false" prefHeight="27.0" prefWidth="55.0" text="-5" />
+                              <Button fx:id="p1minus1" mnemonicParsing="false" prefHeight="11.0" prefWidth="55.0" text="-1" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="89.0" prefWidth="75.0">
+                           <children>
+                              <TextField fx:id="p1Life" alignment="CENTER" prefHeight="96.0" prefWidth="75.0" text="20">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="81.0" prefWidth="56.0">
+                           <children>
+                              <Button fx:id="p1add10" mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
+                              <Button fx:id="p1add5" mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
+                              <Button fx:id="p1add1" mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="p1Name" alignment="CENTER" onMouseClicked="#changep1Name" text="Player Name" />
+               </children></VBox>
+            <VBox prefHeight="111.0" prefWidth="186.0">
+               <children>
+                  <HBox prefHeight="105.0" prefWidth="182.0">
+                     <children>
+                        <VBox prefHeight="105.0" prefWidth="56.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="21.0" prefWidth="55.0" text="-10" />
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="55.0" text="-5" />
+                              <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="55.0" text="-1" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="89.0" prefWidth="75.0">
+                           <children>
+                              <TextField fx:id="p2Life" alignment="CENTER" prefHeight="96.0" prefWidth="75.0" text="20">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="81.0" prefWidth="56.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
+                              <Button mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
+                              <Button mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="p2Name" alignment="CENTER" onMouseClicked="#changep2Name" text="Player Name" />
+               </children>
+            </VBox>
+            <VBox prefHeight="111.0" prefWidth="186.0">
+               <children>
+                  <HBox prefHeight="105.0" prefWidth="182.0">
+                     <children>
+                        <VBox prefHeight="105.0" prefWidth="56.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="21.0" prefWidth="55.0" text="-10" />
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="55.0" text="-5" />
+                              <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="55.0" text="-1" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="89.0" prefWidth="75.0">
+                           <children>
+                              <TextField fx:id="p3Life" alignment="CENTER" prefHeight="96.0" prefWidth="75.0" text="20">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="81.0" prefWidth="56.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
+                              <Button mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
+                              <Button mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="p3Name" alignment="CENTER" onMouseClicked="#changep3Name" text="Player Name" />
+               </children>
+            </VBox>
+            <VBox prefHeight="111.0" prefWidth="186.0">
+               <children>
+                  <HBox prefHeight="105.0" prefWidth="182.0">
+                     <children>
+                        <VBox prefHeight="105.0" prefWidth="56.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="21.0" prefWidth="55.0" text="-10" />
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="55.0" text="-5" />
+                              <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="55.0" text="-1" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="89.0" prefWidth="75.0">
+                           <children>
+                              <TextField fx:id="p4Life" alignment="CENTER" prefHeight="96.0" prefWidth="75.0" text="20">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="81.0" prefWidth="56.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
+                              <Button mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
+                              <Button mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <TextField fx:id="p4Name" alignment="CENTER" onMouseClicked="#changep4Name" text="Player Name" />
+         </children></VBox>
+   </left>
+   <right>
+      <VBox prefHeight="496.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="deckName" alignment="CENTER" onMouseClicked="#changeDeckName" text="Deck Name" />
+            <ScrollPane prefHeight="479.0" prefWidth="203.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1142.0" prefWidth="219.0">
+                     <children>
+                        <HBox layoutX="2.0" layoutY="14.0" prefHeight="31.0" prefWidth="216.0">
+                           <children>
+                              <TextField alignment="CENTER" prefHeight="31.0" prefWidth="90.0" text="Card">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </TextField>
+                              <TextField alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="25.0" text="-" textAlignment="CENTER" />
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" text="?" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></VBox>
+   </right>
+   <center>
+      <HBox prefHeight="496.0" prefWidth="349.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="496.0" prefWidth="333.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="93.0" prefWidth="183.0">
+                           <children>
+                              <Button fx:id="Reset" mnemonicParsing="false" onMouseClicked="#onResetRequested" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="ResetDeck" mnemonicParsing="false" onMouseClicked="#onDeckResetRequested" prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
+                           </children>
+                        </HBox>
+                     </children></HBox>
+                  <HBox prefHeight="411.0" prefWidth="369.0">
+                     <children>
+                        <VBox prefHeight="407.0" prefWidth="177.0">
+                           <children>
+                              <TextField alignment="CENTER" text="Tokens" />
+                              <HBox prefHeight="20.0" prefWidth="177.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="5.0" prefWidth="57.0" text="Add" />
+                                    <Button mnemonicParsing="false" prefHeight="5.0" prefWidth="58.0" text="Del." />
+                                    <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="63.0" text="Edit" />
+                                 </children>
+                              </HBox>
+                              <ListView prefHeight="260.0" prefWidth="162.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="407.0" prefWidth="191.0">
+                           <children>
+                              <TextField alignment="CENTER" text="Counters" />
+                              <HBox prefHeight="28.0" prefWidth="191.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" text="Add" textAlignment="CENTER" />
+                                    <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="64.0" text="Del." textAlignment="CENTER" />
+                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" text="Edit" textAlignment="CENTER" />
+                                 </children>
+                              </HBox>
+                              <ListView prefHeight="260.0" prefWidth="191.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></HBox>
+   </center>
 </BorderPane>
-
