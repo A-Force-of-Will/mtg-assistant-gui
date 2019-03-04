@@ -29,13 +29,13 @@ public class MtgAssistant extends Application {
 		viewController.setStage(stage);
 		
 		//*** This block of code is what starts the GUI at the width and height of your computer but isn't actually maximized
-		Screen screen = Screen.getPrimary();
-		Rectangle2D bounds = screen.getVisualBounds();
-
-		stage.setX(bounds.getMinX()-10);
-		stage.setY(bounds.getMinY()-10);
-		stage.setWidth(bounds.getWidth() + 20);
-		stage.setHeight(bounds.getHeight() + 20);
+//		Screen screen = Screen.getPrimary();
+//		Rectangle2D bounds = screen.getVisualBounds();
+//
+//		stage.setX(bounds.getMinX()-10);
+//		stage.setY(bounds.getMinY()-10);
+//		stage.setWidth(bounds.getWidth() + 20);
+//		stage.setHeight(bounds.getHeight() + 20);
 		//***
 		
 		AssistantController controller = new AssistantController(viewController);
