@@ -51,9 +51,9 @@
                      <children>
                         <VBox prefHeight="105.0" prefWidth="56.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="72.0" text="-10" />
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="79.0" text="-5" />
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="-1" />
+                              <Button fx:id="p2minus10" mnemonicParsing="false" prefHeight="31.0" prefWidth="72.0" text="-10" />
+                              <Button fx:id="p2minus5" mnemonicParsing="false" prefHeight="31.0" prefWidth="79.0" text="-5" />
+                              <Button fx:id="p2minus1" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="-1" />
                            </children>
                         </VBox>
                         <VBox prefHeight="89.0" prefWidth="75.0">
@@ -67,9 +67,9 @@
                         </VBox>
                         <VBox prefHeight="81.0" prefWidth="56.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
-                              <Button mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
-                              <Button mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
+                              <Button fx:id="p2add10" mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
+                              <Button fx:id="p2add5" mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
+                              <Button fx:id="p2add1" mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
                            </children>
                         </VBox>
                      </children>
@@ -83,9 +83,9 @@
                      <children>
                         <VBox prefHeight="105.0" prefWidth="56.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" text="-10" />
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="-5" />
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="-1" />
+                              <Button fx:id="p3minus10" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" text="-10" />
+                              <Button fx:id="p3minus5" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="-5" />
+                              <Button fx:id="p3minus1" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="-1" />
                            </children>
                         </VBox>
                         <VBox prefHeight="89.0" prefWidth="75.0">
@@ -99,9 +99,9 @@
                         </VBox>
                         <VBox prefHeight="81.0" prefWidth="56.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
-                              <Button mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
-                              <Button mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
+                              <Button fx:id="p3add10"mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
+                              <Button fx:id="p3add5" mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
+                              <Button fx:id="p3add1" mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
                            </children>
                         </VBox>
                      </children>
@@ -115,9 +115,9 @@
                      <children>
                         <VBox prefHeight="105.0" prefWidth="56.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="-10" />
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" text="-5" />
-                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" text="-1" />
+                              <Button fx:id="p4minus10"mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="-10" />
+                              <Button fx:id="p4minus5" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" text="-5" />
+                              <Button fx:id="p4minus1" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" text="-1" />
                            </children>
                         </VBox>
                         <VBox prefHeight="89.0" prefWidth="75.0">
@@ -131,9 +131,9 @@
                         </VBox>
                         <VBox prefHeight="81.0" prefWidth="56.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
-                              <Button mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
-                              <Button mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
+                              <Button fx:id="p4add10" mnemonicParsing="false" prefHeight="0.0" prefWidth="56.0" text="+10" />
+                              <Button fx:id="p4add5" mnemonicParsing="false" prefHeight="12.0" prefWidth="56.0" text="+5" />
+                              <Button fx:id="p4add1" mnemonicParsing="false" prefHeight="4.0" prefWidth="56.0" text="+1" />
                            </children>
                         </VBox>
                      </children>
