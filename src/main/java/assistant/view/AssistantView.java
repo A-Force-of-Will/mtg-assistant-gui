@@ -19,6 +19,16 @@ public class AssistantView implements ApiAssistantView {
 	@FXML
 	private TextField mainTextField;
 
+	@FXML
+	private TextField p1Life;
+	@FXML
+	private TextField p2Life;
+	@FXML
+	private TextField p3Life;
+	@FXML
+	private TextField p4Life;
+	
+	
 	public void init() {
 		this.stage.setTitle("MTG Assistant");
 		this.stage.getIcons().add(new Image(this.getClass().getClassLoader().getResourceAsStream("PlaneswalkerLogo.png")));
@@ -60,7 +70,22 @@ public class AssistantView implements ApiAssistantView {
 		
 	}
 	
-	public void updateResult(int result) {
+	public void updateResult(TextField field, int result) {
 		
+		switch(field.toString()) {
+		
+		case "p1Life": 
+			controller.onLifeUpdateRequested(p1Life, result);
+			break;
+		case "p2Life":
+			p2Life.setText("" + result);
+			break;
+		case "p3Life":
+			p3Life.setText("" + result);
+			break;
+		case "p4Life":
+			p4Life.setText("" + result);
+			break;
+		}
 	}
 }
