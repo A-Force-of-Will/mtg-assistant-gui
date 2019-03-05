@@ -17,9 +17,6 @@ public class AssistantView implements ApiAssistantView {
 	private AssistantController controller;
 
 	@FXML
-	private TextField mainTextField;
-
-	@FXML
 	private TextField p1Life;
 	@FXML
 	private TextField p2Life;
@@ -51,10 +48,34 @@ public class AssistantView implements ApiAssistantView {
 		
 	}
 //***********
-	public void onNumericClick(ActionEvent e) {
+	public void onNumericClick(TextField field, ActionEvent e) {
 		Button b = (Button) e.getSource();
 		int number = Integer.parseInt(b.getText());
-		mainTextField.setText(mainTextField.getText() + number);
+		updateResult(field, number);
+//		field.setText(field.getText() + number);
+	}
+	
+	public void updateResult(TextField field, int result) {
+		
+		switch(field.toString()) {
+		
+		case "p1Life": 
+			int p1 = controller.onLifeUpdateRequested(p1Life, result);
+			p1Life.setText("" + p1);
+			break;
+		case "p2Life":
+			int p2 = controller.onLifeUpdateRequested(p2Life, result);
+			p2Life.setText("" + p2);
+			break;
+		case "p3Life":
+			int p3 = controller.onLifeUpdateRequested(p3Life, result);
+			p3Life.setText("" + p3);
+			break;
+		case "p4Life":
+			int p4 = controller.onLifeUpdateRequested(p4Life, result);
+			p4Life.setText("" + p4);
+			break;
+		}
 	}
 	
 	public Stage getStage() {
@@ -70,22 +91,4 @@ public class AssistantView implements ApiAssistantView {
 		
 	}
 	
-	public void updateResult(TextField field, int result) {
-		
-		switch(field.toString()) {
-		
-		case "p1Life": 
-			controller.onLifeUpdateRequested(p1Life, result);
-			break;
-		case "p2Life":
-			p2Life.setText("" + result);
-			break;
-		case "p3Life":
-			p3Life.setText("" + result);
-			break;
-		case "p4Life":
-			p4Life.setText("" + result);
-			break;
-		}
-	}
 }
