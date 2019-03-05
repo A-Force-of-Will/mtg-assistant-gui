@@ -58,5 +58,9 @@ public class AssistantView implements ApiAssistantView {
 	public void registerController(AssistantController ac) {
 		this.controller = ac;
 		
-	}	
+	}
+	
+	public void updateResult(int result) {
+		
+	}
 }
