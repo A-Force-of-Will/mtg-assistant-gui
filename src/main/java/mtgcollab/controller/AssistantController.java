@@ -7,7 +7,7 @@ import mtgcollab.model.Counter;
 import mtgcollab.model.Deck;
 import mtgcollab.model.Player;
 import mtgcollab.model.Token;
-import assistant.view.AssistantView;
+
 
 public class AssistantController {
 	
