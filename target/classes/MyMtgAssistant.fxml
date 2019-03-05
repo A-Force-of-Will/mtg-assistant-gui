@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assistant.view.AssistantView">
    <left>
       <VBox prefHeight="428.0" prefWidth="186.0" BorderPane.alignment="CENTER">
          <children>
@@ -43,7 +43,7 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <TextField fx:id="p1Name" alignment="CENTER" onMouseClicked="#changep1Name" text="Player Name" />
+                  <TextField fx:id="p1Name" alignment="CENTER"  text="Player Name" />
                </children></VBox>
             <VBox prefHeight="111.0" prefWidth="186.0">
                <children>
@@ -74,7 +74,7 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <TextField fx:id="p2Name" alignment="CENTER" onMouseClicked="#changep2Name" text="Player Name" />
+                  <TextField fx:id="p2Name" alignment="CENTER"  text="Player Name" />
                </children>
             </VBox>
             <VBox prefHeight="111.0" prefWidth="186.0">
@@ -106,7 +106,7 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <TextField fx:id="p3Name" alignment="CENTER" onMouseClicked="#changep3Name" text="Player Name" />
+                  <TextField fx:id="p3Name" alignment="CENTER" text="Player Name" />
                </children>
             </VBox>
             <VBox prefHeight="111.0" prefWidth="186.0">
@@ -140,13 +140,13 @@
                   </HBox>
                </children>
             </VBox>
-            <TextField fx:id="p4Name" alignment="CENTER" onMouseClicked="#changep4Name" text="Player Name" />
+            <TextField fx:id="p4Name" alignment="CENTER"  text="Player Name" />
          </children></VBox>
    </left>
    <right>
       <VBox prefHeight="496.0" prefWidth="238.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="deckName" alignment="CENTER" onMouseClicked="#changeDeckName" text="Deck Name" />
+            <TextField fx:id="deckName" alignment="CENTER" text="Deck Name" />
             <HBox prefHeight="31.0" prefWidth="209.0">
                <children>
                   <TextField alignment="CENTER" prefHeight="31.0" prefWidth="66.0" text="Card">
@@ -185,12 +185,12 @@
                      <children>
                         <HBox prefHeight="93.0" prefWidth="183.0">
                            <children>
-                              <Button fx:id="Reset" mnemonicParsing="false" onMouseClicked="#onResetRequested" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
+                              <Button fx:id="Reset" mnemonicParsing="false" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Button fx:id="ResetDeck" mnemonicParsing="false" onMouseClicked="#onDeckResetRequested" prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
+                              <Button fx:id="ResetDeck" mnemonicParsing="false" prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
                            </children>
                         </HBox>
                      </children></HBox>
