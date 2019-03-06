@@ -29,21 +29,21 @@
                            <children>
                               <TextField fx:id="p1Life" alignment="CENTER" prefHeight="96.0" prefWidth="75.0" text="20">
                                  <font>
-                                    <Font size="29.0" />
+                                    <Font size="25.0" />
                                  </font>
                               </TextField>
                            </children>
                         </VBox>
                         <VBox prefHeight="81.0" prefWidth="56.0">
                            <children>
-                              <Button fx:id="p1_add10" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="0.0" prefWidth="56.0" text="10" />
-                              <Button fx:id="p1_add5" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="12.0" prefWidth="56.0" text="5" />
+                              <Button fx:id="p1_add10" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="0.0" prefWidth="56.0" text="+10" />
+                              <Button fx:id="p1_add5" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="12.0" prefWidth="56.0" text="+5" />
                               <Button fx:id="p1_add1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="4.0" prefWidth="56.0" text="+1" />
                            </children>
                         </VBox>
                      </children>
                   </HBox>
-                  <TextField fx:id="p1Name" alignment="CENTER"  text="Player Name" />
+                  <TextField fx:id="p1Name" alignment="CENTER" text="Player Name" />
                </children></VBox>
             <VBox prefHeight="111.0" prefWidth="186.0">
                <children>
@@ -60,7 +60,7 @@
                            <children>
                               <TextField fx:id="p2Life" alignment="CENTER" prefHeight="96.0" prefWidth="75.0" text="20">
                                  <font>
-                                    <Font size="29.0" />
+                                    <Font size="25.0" />
                                  </font>
                               </TextField>
                            </children>
@@ -74,7 +74,7 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <TextField fx:id="p2Name" alignment="CENTER"  text="Player Name" />
+                  <TextField fx:id="p2Name" alignment="CENTER" text="Player Name" />
                </children>
             </VBox>
             <VBox prefHeight="111.0" prefWidth="186.0">
@@ -92,7 +92,7 @@
                            <children>
                               <TextField fx:id="p3Life" alignment="CENTER" prefHeight="96.0" prefWidth="75.0" text="20">
                                  <font>
-                                    <Font size="29.0" />
+                                    <Font size="25.0" />
                                  </font>
                               </TextField>
                            </children>
@@ -106,7 +106,7 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <TextField fx:id="p3Name" alignment="CENTER"  text="Player Name" />
+                  <TextField fx:id="p3Name" alignment="CENTER" text="Player Name" />
                </children>
             </VBox>
             <VBox prefHeight="111.0" prefWidth="186.0">
@@ -124,7 +124,7 @@
                            <children>
                               <TextField fx:id="p4Life" alignment="CENTER" prefHeight="96.0" prefWidth="75.0" text="20">
                                  <font>
-                                    <Font size="29.0" />
+                                    <Font size="25.0" />
                                  </font>
                               </TextField>
                            </children>
@@ -140,7 +140,7 @@
                   </HBox>
                </children>
             </VBox>
-            <TextField fx:id="p4Name" alignment="CENTER"  text="Player Name" />
+            <TextField fx:id="p4Name" alignment="CENTER" text="Player Name" />
          </children></VBox>
    </left>
    <right>
@@ -184,18 +184,18 @@
                      <children>
                         <HBox prefHeight="93.0" prefWidth="183.0">
                            <children>
-                              <Button mnemonicParsing="false"  prefHeight="92.0" prefWidth="179.0" text="Reset All" />
+                              <Button mnemonicParsing="false" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Button mnemonicParsing="false"  prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
+                              <Button mnemonicParsing="false" prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
                            </children>
                         </HBox>
                      </children></HBox>
                   <HBox prefHeight="411.0" prefWidth="369.0">
                      <children>
-                        <VBox prefHeight="407.0" prefWidth="177.0">
+                        <VBox prefHeight="404.0" prefWidth="165.0">
                            <children>
                               <Label alignment="CENTER" prefHeight="29.0" prefWidth="240.0" text="Counters" textAlignment="CENTER" />
                               <HBox prefHeight="31.0" prefWidth="216.0">
@@ -205,7 +205,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="tokenAmount1" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                                    <TextField fx:id="counterAmount1" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
                                     <Button fx:id="c1a1" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
                                        <font>
                                           <Font size="14.0" />
@@ -221,7 +221,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="tokenAmount2" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                                    <TextField fx:id="counterAmount2" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
                                     <Button fx:id="c2a1" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
                                        <font>
                                           <Font size="14.0" />
@@ -237,7 +237,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="tokenAmount3" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                                    <TextField fx:id="counterAmount3" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
                                     <Button fx:id="c3a1" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
                                        <font>
                                           <Font size="14.0" />
@@ -253,7 +253,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="tokenAmount4" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                                    <TextField fx:id="counterAmount4" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
                                     <Button fx:id="c4a1" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
                                        <font>
                                           <Font size="14.0" />
@@ -269,7 +269,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="tokenAmount5" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                                    <TextField fx:id="counterAmount5" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
                                     <Button fx:id="c5a1" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
                                        <font>
                                           <Font size="14.0" />
@@ -285,7 +285,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="tokenAmount6" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                                    <TextField fx:id="counterAmount6" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
                                     <Button fx:id="c6a1" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
                                        <font>
                                           <Font size="14.0" />
@@ -301,7 +301,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="tokenAmount7" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                                    <TextField fx:id="counterAmount7" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
                                     <Button fx:id="c7a1" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
                                        <font>
                                           <Font size="14.0" />
@@ -317,7 +317,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="tokenAmount8" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
+                                    <TextField fx:id="counterAmount8" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
                                     <Button fx:id="c8a1" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
                                        <font>
                                           <Font size="14.0" />
@@ -328,7 +328,7 @@
                               </HBox>
                            </children>
                         </VBox>
-                        <VBox prefHeight="407.0" prefWidth="191.0">
+                        <VBox prefHeight="404.0" prefWidth="181.0">
                            <children>
                               <Label alignment="CENTER" prefHeight="29.0" prefWidth="240.0" text="Tokens" textAlignment="CENTER" />
                               <HBox prefHeight="31.0" prefWidth="216.0">
