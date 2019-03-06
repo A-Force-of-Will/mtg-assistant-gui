@@ -91,7 +91,6 @@ public class AssistantView {
 	}
 
 	public void updateResult(String field, int result) {
-		
 		String[] players = field.split("_");
 		
 		switch (players[0]) {

@@ -338,7 +338,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="counterAmount8" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
+                                    <TextField fx:id="counterAmount_8" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
                                     <Button fx:id="c8_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
