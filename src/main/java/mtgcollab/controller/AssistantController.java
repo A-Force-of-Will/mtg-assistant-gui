@@ -3,11 +3,7 @@ package mtgcollab.controller;
 import assistant.view.AssistantView;
 import javafx.scene.control.TextField;
 import mtgcollab.model.Card;
-import mtgcollab.model.Counter;
 import mtgcollab.model.Deck;
-import mtgcollab.model.Player;
-import mtgcollab.model.Token;
-
 
 public class AssistantController {
 	
