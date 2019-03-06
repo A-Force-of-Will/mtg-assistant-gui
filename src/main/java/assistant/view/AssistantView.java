@@ -82,6 +82,29 @@ public class AssistantView {
 	}
 
 //***********
+	public void onResetAllClick(ActionEvent e) {
+		p1Life.setText("" + 20);
+		p2Life.setText("" + 20);
+		p3Life.setText("" + 20);
+		p4Life.setText("" + 20);
+		counterAmount_c1.setText("" + 0);
+		counterAmount_c2.setText("" + 0);
+		counterAmount_c3.setText("" + 0);
+		counterAmount_c4.setText("" + 0);
+		counterAmount_c5.setText("" + 0);
+		counterAmount_c6.setText("" + 0);
+		counterAmount_c7.setText("" + 0);
+		counterAmount_c8.setText("" + 0);
+		tokenAmount_t1.setText("" + 0);
+		tokenAmount_t2.setText("" + 0);
+		tokenAmount_t3.setText("" + 0);
+		tokenAmount_t4.setText("" + 0);
+		tokenAmount_t5.setText("" + 0);
+		tokenAmount_t6.setText("" + 0);
+		tokenAmount_t7.setText("" + 0);
+		tokenAmount_t8.setText("" + 0);		
+	}
+	
 	public void onNumericClick(ActionEvent e) {
 		Button b = (Button) e.getSource();
 		String p = b.getId();

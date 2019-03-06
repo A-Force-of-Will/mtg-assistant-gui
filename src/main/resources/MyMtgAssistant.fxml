@@ -184,7 +184,7 @@
                      <children>
                         <HBox prefHeight="93.0" prefWidth="183.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
+                              <Button fx:id="resetAll" onAction="#onResetAllClick" mnemonicParsing="false" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
