@@ -51,7 +51,7 @@ public class AssistantView {
 	}
 
 	public void onResetAllClick(ActionEvent e) {
-		deckName.setText("Deck Name");
+		deckName.setText("Deck Name"); 
 		token1.setText("Token");
 		token2.setText("Token");
 		token3.setText("Token");
