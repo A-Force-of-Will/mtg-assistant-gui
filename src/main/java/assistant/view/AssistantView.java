@@ -50,32 +50,34 @@ public class AssistantView{
 //***********
 	public void onNumericClick(ActionEvent e) {
 		Button b = (Button) e.getSource();
+		String p = b.getId();
 		int number = Integer.parseInt(b.getText());
-//		updateResult(field, number);
+		updateResult(p, number);
 //		field.setText(field.getText() + number);
 	}
 	
-	public void updateResult(TextField field, int result) {
+	public void updateResult(String field, int result) {
 		
-		switch(field.toString()) {
-		
-		case "p1Life": 
-			int p1 = controller.onLifeUpdateRequested(p1Life, result);
-			p1Life.setText("" + p1);
-			break;
-		case "p2Life":
-			int p2 = controller.onLifeUpdateRequested(p2Life, result);
-			p2Life.setText("" + p2);
-			break;
-		case "p3Life":
-			int p3 = controller.onLifeUpdateRequested(p3Life, result);
-			p3Life.setText("" + p3);
-			break;
-		case "p4Life":
-			int p4 = controller.onLifeUpdateRequested(p4Life, result);
-			p4Life.setText("" + p4);
-			break;
-		}
+		String[] players = field.split("_");
+				
+				switch(players[0]) {
+			case "p1_": 
+				int p1 = controller.onLifeUpdateRequested(p1Life, result);
+				p1Life.setText("" + p1);
+				break;
+			case "p2_":
+				int p2 = controller.onLifeUpdateRequested(p2Life, result);
+				p2Life.setText("" + p2);
+				break;
+			case "p3_":
+				int p3 = controller.onLifeUpdateRequested(p3Life, result);
+				p3Life.setText("" + p3);
+				break;
+			case "p4_":
+				int p4 = controller.onLifeUpdateRequested(p4Life, result);
+				p4Life.setText("" + p4);
+				break;
+			}
 	}
 	
 	public Stage getStage() {
