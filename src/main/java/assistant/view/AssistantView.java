@@ -93,22 +93,8 @@ public class AssistantView {
 	
 	public void onResetAllClick(ActionEvent e) {
 		deckName.setText("Deck Name"); 
-		token1.setText("Token");
-		token2.setText("Token");
-		token3.setText("Token");
-		token4.setText("Token");
-		token5.setText("Token");
-		token6.setText("Token");
-		token7.setText("Token");
-		token8.setText("Token");
-		tokenAmount_t1.setText("" + 0);
-		tokenAmount_t2.setText("" + 0);
-		tokenAmount_t3.setText("" + 0);
-		tokenAmount_t4.setText("" + 0);
-		tokenAmount_t5.setText("" + 0);
-		tokenAmount_t6.setText("" + 0);
-		tokenAmount_t7.setText("" + 0);
-		tokenAmount_t8.setText("" + 0);	
+		onResetTokensClick(e);
+		onResetCountersClick(e);
 		p1Name.setText("Player Name");
 		p2Name.setText("Player Name");
 		p3Name.setText("Player Name");
@@ -117,22 +103,6 @@ public class AssistantView {
 		p2Life.setText("" + 20);
 		p3Life.setText("" + 20);
 		p4Life.setText("" + 20);	
-		counter1.setText("Counter");
-		counter2.setText("Counter");
-		counter3.setText("Counter");
-		counter4.setText("Counter");
-		counter5.setText("Counter");
-		counter6.setText("Counter");
-		counter7.setText("Counter");
-		counter8.setText("Counter");
-		counterAmount_c1.setText("" + 0);
-		counterAmount_c2.setText("" + 0);
-		counterAmount_c3.setText("" + 0);
-		counterAmount_c4.setText("" + 0);
-		counterAmount_c5.setText("" + 0);
-		counterAmount_c6.setText("" + 0);
-		counterAmount_c7.setText("" + 0);
-		counterAmount_c8.setText("" + 0);
 	}
 	
 	public void onNumericClick(ActionEvent e) {
