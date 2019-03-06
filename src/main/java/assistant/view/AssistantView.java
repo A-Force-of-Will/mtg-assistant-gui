@@ -17,6 +17,9 @@ public class AssistantView {
 	private AssistantController controller;
 	
 	@FXML
+	private TextField deckName;
+	
+	@FXML
 	private TextField p1Name, p2Name, p3Name, p4Name;
 	
 	@FXML
@@ -47,25 +50,8 @@ public class AssistantView {
 		this.stage.show();
 	}
 
-//********** What do any of these 'draw' methods do?              //**ANSWER: THEY DRAW THE BUTONS FOR THE PARTICULAR AREA THEY RESIDE IN****//
-	public void drawPlayers() {
-
-	}
-
-	public void drawDecks() {
-
-	}
-
-	public void drawTokens() {
-
-	}
-
-	public void drawCounters() {
-
-	}
-
-//***********
 	public void onResetAllClick(ActionEvent e) {
+		deckName.setText("Deck Name");
 		token1.setText("Token");
 		token2.setText("Token");
 		token3.setText("Token");
