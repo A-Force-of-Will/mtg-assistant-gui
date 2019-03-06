@@ -48,7 +48,7 @@ public class AssistantController {
 		
 	}
 
-	public int onLifeUpdateRequested(TextField life, int result) {
+	public int onUpdateRequested(TextField life, int result) {
 		String l = life.getText();//.toString();
 		int hp = Integer.parseInt(l);
 		 return hp += result;
