@@ -61,19 +61,19 @@ public class AssistantView{
 		String[] players = field.split("_");
 				
 				switch(players[0]) {
-			case "p1_": 
+			case "p1": 
 				int p1 = controller.onLifeUpdateRequested(p1Life, result);
 				p1Life.setText("" + p1);
 				break;
-			case "p2_":
+			case "p2":
 				int p2 = controller.onLifeUpdateRequested(p2Life, result);
 				p2Life.setText("" + p2);
 				break;
-			case "p3_":
+			case "p3":
 				int p3 = controller.onLifeUpdateRequested(p3Life, result);
 				p3Life.setText("" + p3);
 				break;
-			case "p4_":
+			case "p4":
 				int p4 = controller.onLifeUpdateRequested(p4Life, result);
 				p4Life.setText("" + p4);
 				break;
