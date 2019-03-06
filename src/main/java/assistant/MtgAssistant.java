@@ -8,7 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import mtgassistant.controller.AssistantController;
+import mtgcollab.controller.AssistantController;
 
 public class MtgAssistant extends Application {
 

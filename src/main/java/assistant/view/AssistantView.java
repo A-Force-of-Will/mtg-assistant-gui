@@ -7,10 +7,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import mtgassistant.controller.AssistantController;
-import mtgassistant.view.ApiAssistantView;
+import mtgcollab.controller.AssistantController;
+import assistant.view.AssistantView;
 
-public class AssistantView implements ApiAssistantView {
+public class AssistantView{
 	
 	private Stage stage;
 	

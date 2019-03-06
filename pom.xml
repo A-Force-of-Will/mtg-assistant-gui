@@ -5,12 +5,4 @@
 	<groupId>edu.neumont.byscollab.mtgcollab</groupId>
 	<artifactId>mtg-collab</artifactId>
 	<version>1.0</version>
-
-	<dependencies>
-		<dependency>
-		  <groupId>edu.neumont.byscollab.mtgassistant</groupId>
-		  <artifactId>mtg-assistant</artifactId>
-		  <version>1.0</version>
-		</dependency>
-	</dependencies>
 </project>
