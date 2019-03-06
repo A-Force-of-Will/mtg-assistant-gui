@@ -15,7 +15,15 @@ public class AssistantView {
 	private Stage stage;
 
 	private AssistantController controller;
-
+	
+	@FXML
+	private TextField p1Name;
+	@FXML
+	private TextField p2Name;
+	@FXML
+	private TextField p3Name;
+	@FXML
+	private TextField p4Name;
 	@FXML
 	private TextField p1Life;
 	@FXML
@@ -24,6 +32,22 @@ public class AssistantView {
 	private TextField p3Life;
 	@FXML
 	private TextField p4Life;
+	@FXML
+	private TextField counter1;
+	@FXML
+	private TextField counter2;
+	@FXML
+	private TextField counter3;
+	@FXML
+	private TextField counter4;
+	@FXML
+	private TextField counter5;
+	@FXML
+	private TextField counter6;
+	@FXML
+	private TextField counter7;
+	@FXML
+	private TextField counter8;
 	@FXML
 	private TextField counterAmount_c1;
 	@FXML
@@ -40,6 +64,22 @@ public class AssistantView {
 	private TextField counterAmount_c7;
 	@FXML
 	private TextField counterAmount_c8;
+	@FXML
+	private TextField token1;
+	@FXML
+	private TextField token2;
+	@FXML
+	private TextField token3;
+	@FXML
+	private TextField token4;
+	@FXML
+	private TextField token5;
+	@FXML
+	private TextField token6;
+	@FXML
+	private TextField token7;
+	@FXML
+	private TextField token8;
 	@FXML
 	private TextField tokenAmount_t1;
 	@FXML
@@ -83,6 +123,26 @@ public class AssistantView {
 
 //***********
 	public void onResetAllClick(ActionEvent e) {
+		token1.setText("Token");
+		token2.setText("Token");
+		token3.setText("Token");
+		token4.setText("Token");
+		token5.setText("Token");
+		token6.setText("Token");
+		token7.setText("Token");
+		token8.setText("Token");
+		counter1.setText("Counter");
+		counter2.setText("Counter");
+		counter3.setText("Counter");
+		counter4.setText("Counter");
+		counter5.setText("Counter");
+		counter6.setText("Counter");
+		counter7.setText("Counter");
+		counter8.setText("Counter");
+		p1Name.setText("Player Name");
+		p2Name.setText("Player Name");
+		p3Name.setText("Player Name");
+		p4Name.setText("Player Name");
 		p1Life.setText("" + 20);
 		p2Life.setText("" + 20);
 		p3Life.setText("" + 20);
