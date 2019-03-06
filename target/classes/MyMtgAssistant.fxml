@@ -480,7 +480,7 @@
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t8m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t8_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
                            </children>
