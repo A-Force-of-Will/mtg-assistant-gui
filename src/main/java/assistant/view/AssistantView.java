@@ -17,85 +17,28 @@ public class AssistantView {
 	private AssistantController controller;
 	
 	@FXML
-	private TextField p1Name;
+	private TextField p1Name, p2Name, p3Name, p4Name;
+	
 	@FXML
-	private TextField p2Name;
+	private TextField p1Life, p2Life, p3Life, p4Life;
+	
 	@FXML
-	private TextField p3Name;
+	private TextField counter1, counter2, counter3, counter4, 
+	counter5, counter6, counter7, counter8;
+	
 	@FXML
-	private TextField p4Name;
+	private TextField counterAmount_c1, counterAmount_c2,
+	counterAmount_c3, counterAmount_c4, counterAmount_c5,
+	counterAmount_c6, counterAmount_c7, counterAmount_c8;
+
 	@FXML
-	private TextField p1Life;
+	private TextField token1, token2, token3, token4,
+	token5, token6, token7, token8;
+	
 	@FXML
-	private TextField p2Life;
-	@FXML
-	private TextField p3Life;
-	@FXML
-	private TextField p4Life;
-	@FXML
-	private TextField counter1;
-	@FXML
-	private TextField counter2;
-	@FXML
-	private TextField counter3;
-	@FXML
-	private TextField counter4;
-	@FXML
-	private TextField counter5;
-	@FXML
-	private TextField counter6;
-	@FXML
-	private TextField counter7;
-	@FXML
-	private TextField counter8;
-	@FXML
-	private TextField counterAmount_c1;
-	@FXML
-	private TextField counterAmount_c2;
-	@FXML
-	private TextField counterAmount_c3;
-	@FXML
-	private TextField counterAmount_c4;
-	@FXML
-	private TextField counterAmount_c5;
-	@FXML
-	private TextField counterAmount_c6;
-	@FXML
-	private TextField counterAmount_c7;
-	@FXML
-	private TextField counterAmount_c8;
-	@FXML
-	private TextField token1;
-	@FXML
-	private TextField token2;
-	@FXML
-	private TextField token3;
-	@FXML
-	private TextField token4;
-	@FXML
-	private TextField token5;
-	@FXML
-	private TextField token6;
-	@FXML
-	private TextField token7;
-	@FXML
-	private TextField token8;
-	@FXML
-	private TextField tokenAmount_t1;
-	@FXML
-	private TextField tokenAmount_t2;
-	@FXML
-	private TextField tokenAmount_t3;
-	@FXML
-	private TextField tokenAmount_t4;
-	@FXML
-	private TextField tokenAmount_t5;
-	@FXML
-	private TextField tokenAmount_t6;
-	@FXML
-	private TextField tokenAmount_t7;
-	@FXML
-	private TextField tokenAmount_t8;
+	private TextField tokenAmount_t1, tokenAmount_t2,
+	tokenAmount_t3, tokenAmount_t4, tokenAmount_t5,
+	tokenAmount_t6, tokenAmount_t7, tokenAmount_t8;
 
 	public void init() {
 		this.stage.setTitle("MTG Assistant");
