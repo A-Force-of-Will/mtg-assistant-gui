@@ -48,7 +48,7 @@ public class AssistantView{
 		
 	}
 //***********
-	public void onNumericClick(TextField field, ActionEvent e) {
+	public void onNumericClick(ActionEvent e) {
 		Button b = (Button) e.getSource();
 		int number = Integer.parseInt(b.getText());
 		updateResult(field, number);
