@@ -51,7 +51,7 @@ public class AssistantView{
 	public void onNumericClick(ActionEvent e) {
 		Button b = (Button) e.getSource();
 		int number = Integer.parseInt(b.getText());
-		updateResult(field, number);
+//		updateResult(field, number);
 //		field.setText(field.getText() + number);
 	}
 	
