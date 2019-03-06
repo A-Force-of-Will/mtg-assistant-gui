@@ -91,90 +91,88 @@ public class AssistantView {
 	}
 
 	public void updateResult(String field, int result) {
-		System.out.println(field);
+		
 		String[] players = field.split("_");
-		for (String s : players) {
-			System.out.println(s);
-		}
+		
 		switch (players[0]) {
 		case "p1":
-			int p1 = controller.onLifeUpdateRequested(p1Life, result);
+			int p1 = controller.onUpdateRequested(p1Life, result);
 			p1Life.setText("" + p1);
 			break;
 		case "p2":
-			int p2 = controller.onLifeUpdateRequested(p2Life, result);
+			int p2 = controller.onUpdateRequested(p2Life, result);
 			p2Life.setText("" + p2);
 			break;
 		case "p3":
-			int p3 = controller.onLifeUpdateRequested(p3Life, result);
+			int p3 = controller.onUpdateRequested(p3Life, result);
 			p3Life.setText("" + p3);
 			break;
 		case "p4":
-			int p4 = controller.onLifeUpdateRequested(p4Life, result);
+			int p4 = controller.onUpdateRequested(p4Life, result);
 			p4Life.setText("" + p4);
 			break;
 		case "c1":
-			int c1 = controller.onLifeUpdateRequested(counterAmount_c1, result);
+			int c1 = controller.onUpdateRequested(counterAmount_c1, result);
 			counterAmount_c1.setText("" + c1);
 			break;
 		case "c2":
-			int c2 = controller.onLifeUpdateRequested(counterAmount_c2, result);
+			int c2 = controller.onUpdateRequested(counterAmount_c2, result);
 			counterAmount_c2.setText("" + c2);
 			break;
 		case "c3":
-			int c3 = controller.onLifeUpdateRequested(counterAmount_c3, result);
+			int c3 = controller.onUpdateRequested(counterAmount_c3, result);
 			counterAmount_c3.setText("" + c3);
 			break;
 		case "c4":
-			int c4 = controller.onLifeUpdateRequested(counterAmount_c4, result);
+			int c4 = controller.onUpdateRequested(counterAmount_c4, result);
 			counterAmount_c4.setText("" + c4);
 			break;
 		case "c5":
-			int c5 = controller.onLifeUpdateRequested(counterAmount_c5, result);
+			int c5 = controller.onUpdateRequested(counterAmount_c5, result);
 			counterAmount_c5.setText("" + c5);
 			break;
 		case "c6":
-			int c6 = controller.onLifeUpdateRequested(counterAmount_c6, result);
+			int c6 = controller.onUpdateRequested(counterAmount_c6, result);
 			counterAmount_c6.setText("" + c6);
 			break;
 		case "c7":
-			int c7 = controller.onLifeUpdateRequested(counterAmount_c7, result);
+			int c7 = controller.onUpdateRequested(counterAmount_c7, result);
 			counterAmount_c7.setText("" + c7);
 			break;
 		case "c8":
-			int c8 = controller.onLifeUpdateRequested(counterAmount_c8, result);
+			int c8 = controller.onUpdateRequested(counterAmount_c8, result);
 			counterAmount_c8.setText("" + c8);
 			break;
 		case "t1":
-			int t1 = controller.onLifeUpdateRequested(tokenAmount_t1, result);
+			int t1 = controller.onUpdateRequested(tokenAmount_t1, result);
 			tokenAmount_t1.setText("" + t1);
 			break;
 		case "t2":
-			int t2 = controller.onLifeUpdateRequested(tokenAmount_t2, result);
+			int t2 = controller.onUpdateRequested(tokenAmount_t2, result);
 			tokenAmount_t2.setText("" + t2);
 			break;
 		case "t3":
-			int t3 = controller.onLifeUpdateRequested(tokenAmount_t3, result);
+			int t3 = controller.onUpdateRequested(tokenAmount_t3, result);
 			tokenAmount_t3.setText("" + t3);
 			break;
 		case "t4":
-			int t4 = controller.onLifeUpdateRequested(tokenAmount_t4, result);
+			int t4 = controller.onUpdateRequested(tokenAmount_t4, result);
 			tokenAmount_t4.setText("" + t4);
 			break;
 		case "t5":
-			int t5 = controller.onLifeUpdateRequested(tokenAmount_t5, result);
+			int t5 = controller.onUpdateRequested(tokenAmount_t5, result);
 			tokenAmount_t5.setText("" + t5);
 			break;
 		case "t6":
-			int t6 = controller.onLifeUpdateRequested(tokenAmount_t6, result);
+			int t6 = controller.onUpdateRequested(tokenAmount_t6, result);
 			tokenAmount_t6.setText("" + t6);
 			break;
 		case "t7":
-			int t7 = controller.onLifeUpdateRequested(tokenAmount_t7, result);
+			int t7 = controller.onUpdateRequested(tokenAmount_t7, result);
 			tokenAmount_t7.setText("" + t7);
 			break;
 		case "t8":
-			int t8 = controller.onLifeUpdateRequested(tokenAmount_t8, result);
+			int t8 = controller.onUpdateRequested(tokenAmount_t8, result);
 			tokenAmount_t8.setText("" + t8);
 			break;
 		}
