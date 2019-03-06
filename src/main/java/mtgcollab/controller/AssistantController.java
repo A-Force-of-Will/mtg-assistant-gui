@@ -24,30 +24,6 @@ public class AssistantController {
 		this.view.init();
 	}
 	
-	public void addCounter() {
-		
-	}
-	
-	public void editCounter(Counter counter) {
-		
-	}
-	
-	public void deleteCounter(Counter counter) {
-		
-	}
-	
-	public void addPlayer() {
-		
-	}
-	
-	public void editPlayer(Player player) {
-		
-	}
-	
-	public void deletePlayer(Player player) {
-		
-	}
-	
 	public void addCard() {
 		
 	}
@@ -69,18 +45,6 @@ public class AssistantController {
 	}
 	
 	public void deleteDeck(Deck deck) {
-		
-	}
-	
-	public void addToken() {
-		
-	}
-	
-	public void editToken(Token token) {
-		
-	}
-	
-	public void deleteToken(Token token) {
 		
 	}
 
