@@ -184,12 +184,12 @@
                      <children>
                         <HBox prefHeight="93.0" prefWidth="183.0">
                            <children>
-                              <Button fx:id="resetAll" onAction="#onResetAllClick" mnemonicParsing="false" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
+                              <Button mnemonicParsing="false" onAction="#onResetAllClick" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#onResetDeckClick" prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
                            </children>
                         </HBox>
                      </children></HBox>
@@ -200,7 +200,7 @@
                               <Label alignment="CENTER" prefHeight="29.0" prefWidth="240.0" text="Counters" textAlignment="CENTER" />
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="counter1" alignment="CENTER" prefHeight="31.0" prefWidth="63.0" text="Counter">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="63.0" text="Counter">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -219,7 +219,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="counter2" alignment="CENTER" prefHeight="31.0" prefWidth="61.0" text="Counter">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="61.0" text="Counter">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -238,7 +238,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="counter3" alignment="CENTER" prefHeight="31.0" prefWidth="61.0" text="Counter">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="61.0" text="Counter">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -257,7 +257,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="counter4" alignment="CENTER" prefHeight="31.0" prefWidth="60.0" text="Counter">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="60.0" text="Counter">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -276,7 +276,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="counter5" alignment="CENTER" prefHeight="31.0" prefWidth="61.0" text="Counter">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="61.0" text="Counter">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -295,7 +295,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="counter6" alignment="CENTER" prefHeight="31.0" prefWidth="61.0" text="Counter">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="61.0" text="Counter">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -314,7 +314,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="counter7" alignment="CENTER" prefHeight="31.0" prefWidth="60.0" text="Counter">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="60.0" text="Counter">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -333,12 +333,12 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="counter8" alignment="CENTER" prefHeight="31.0" prefWidth="60.0" text="Counter">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="60.0" text="Counter">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="counterAmount_c8" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
+                                    <TextField fx:id="counterAmount8" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
                                     <Button fx:id="c8_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
@@ -350,6 +350,12 @@
                                        </font></Button>
                                  </children>
                               </HBox>
+                              <Button mnemonicParsing="false" onAction="#onResetCountersClick" prefHeight="95.0" prefWidth="161.0" text="Reset Counters" />
+                              <Label prefHeight="32.0" prefWidth="158.0" text="Created By: Daniil Baydak">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </VBox>
                         <VBox prefHeight="404.0" prefWidth="181.0">
@@ -357,7 +363,7 @@
                               <Label alignment="CENTER" prefHeight="29.0" prefWidth="240.0" text="Tokens" textAlignment="CENTER" />
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="token1" alignment="CENTER" prefHeight="31.0" prefWidth="63.0" text="Token">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="63.0" text="Token">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -373,7 +379,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="token2" alignment="CENTER" prefHeight="31.0" prefWidth="63.0" text="Token">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="63.0" text="Token">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -389,7 +395,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="token3" alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -405,7 +411,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="token4" alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -421,7 +427,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="token5" alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -437,7 +443,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="token6" alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -453,7 +459,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="token7" alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -469,7 +475,7 @@
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
-                                    <TextField fx:id="token8" alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
+                                    <TextField alignment="CENTER" prefHeight="31.0" prefWidth="64.0" text="Token">
                                        <font>
                                           <Font size="12.0" />
                                        </font>
@@ -480,9 +486,15 @@
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t8_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t8m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
+                              <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="173.0" text="Reset Tokens" />
+                              <Label prefHeight="33.0" prefWidth="174.0" text=",Keegan York &amp; Zane Stockton">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </VBox>
                      </children>
