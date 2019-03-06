@@ -184,12 +184,12 @@
                      <children>
                         <HBox prefHeight="93.0" prefWidth="183.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#onResetAllClick" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
+                              <Button mnemonicParsing="false" prefHeight="92.0" prefWidth="179.0" text="Reset All" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#onResetDeckClick" prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
+                              <Button mnemonicParsing="false" prefHeight="97.0" prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
                            </children>
                         </HBox>
                      </children></HBox>
@@ -206,12 +206,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="counterAmount_c1" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="34.0" text="0" />
-                                    <Button fx:id="c1a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="+1">
+                                    <Button fx:id="c1_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="c1m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                                    <Button fx:id="c1_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                                        <font>
                                           <Font size="12.0" />
                                        </font></Button>
@@ -225,12 +225,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="counterAmount_c2" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="0" />
-                                    <Button fx:id="c2a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="+1">
+                                    <Button fx:id="c2_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="c2m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                                    <Button fx:id="c2_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                                        <font>
                                           <Font size="13.0" />
                                        </font></Button>
@@ -244,12 +244,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="counterAmount_c3" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="0" />
-                                    <Button fx:id="c3a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="+1">
+                                    <Button fx:id="c3_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="c3m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                                    <Button fx:id="c3_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                                        <font>
                                           <Font size="13.0" />
                                        </font></Button>
@@ -263,12 +263,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="counterAmount_c4" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="0" />
-                                    <Button fx:id="c4a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="34.0" text="+1">
+                                    <Button fx:id="c4_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="34.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="c4m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                                    <Button fx:id="c4_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                                        <font>
                                           <Font size="13.0" />
                                        </font></Button>
@@ -282,12 +282,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="counterAmount_c5" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="0" />
-                                    <Button fx:id="c5a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="34.0" text="+1">
+                                    <Button fx:id="c5_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="34.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="c5m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                                    <Button fx:id="c5_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                                        <font>
                                           <Font size="13.0" />
                                        </font></Button>
@@ -301,12 +301,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="counterAmount_c6" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="0" />
-                                    <Button fx:id="c6a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="+1">
+                                    <Button fx:id="c6_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="c6m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                                    <Button fx:id="c6_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                                        <font>
                                           <Font size="12.0" />
                                        </font></Button>
@@ -320,12 +320,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="counterAmount_c7" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="36.0" text="0" />
-                                    <Button fx:id="c7a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="34.0" text="+1">
+                                    <Button fx:id="c7_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="34.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="c7m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                                    <Button fx:id="c7_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                                        <font>
                                           <Font size="13.0" />
                                        </font></Button>
@@ -339,12 +339,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="counterAmount8" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="c8a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="+1">
+                                    <Button fx:id="c8_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="+1">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="c8m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                                    <Button fx:id="c8_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                                        <font>
                                           <Font size="12.0" />
                                        </font></Button>
@@ -363,12 +363,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="tokenAmount_t1" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="t1a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="39.0" text="+1">
+                                    <Button fx:id="t1_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="39.0" text="+1">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t1m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t1_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
@@ -379,12 +379,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="tokenAmount_t2" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="t2a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
+                                    <Button fx:id="t2_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t2m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="36.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t2_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="36.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
@@ -395,12 +395,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="tokenAmount_t3" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="t3a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
+                                    <Button fx:id="t3_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t3m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t3_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
@@ -411,12 +411,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="tokenAmount_t4" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="t4a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
+                                    <Button fx:id="t4_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t4m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t4_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
@@ -427,12 +427,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="tokenAmount_t5" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="t5a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
+                                    <Button fx:id="t5_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t5m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t5_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
@@ -443,12 +443,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="tokenAmount_t6" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="t6a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
+                                    <Button fx:id="t6_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t6m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t6_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
@@ -459,12 +459,12 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="tokenAmount_t7" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="t7a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
+                                    <Button fx:id="t7_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="t7m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
+                                    <Button fx:id="t7_m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
                               <HBox prefHeight="31.0" prefWidth="216.0">
@@ -475,7 +475,7 @@
                                        </font>
                                     </TextField>
                                     <TextField fx:id="tokenAmount_t8" alignment="CENTER" onAction="#onNumericClick" prefHeight="31.0" prefWidth="37.0" text="0" />
-                                    <Button fx:id="t8a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
+                                    <Button fx:id="t8_a1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="38.0" text="+1">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
