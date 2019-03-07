@@ -1,6 +1,7 @@
 package assistant.view;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -23,6 +24,12 @@ public class AssistantView {
 	
 	@FXML
 	private TextField deckName;
+	
+	@FXML
+	private Button addCard, minusCard;
+	
+	@FXML
+	private TextField cardName, cardAmount;
 	
 	@FXML
 	private TextField p1Name, p2Name, p3Name, p4Name;
@@ -59,9 +66,25 @@ public class AssistantView {
 	}
 	
 	public void onCardAddRequestClick(ActionEvent e) {
-		System.out.println("HEY");
 		HBox newCard = new HBox();
-		newCard.getChildren().add(new TextField("HELLO"));
+		//make a button
+		TextField newCardTextFieldName = new TextField(cardName.getText());
+		TextField newCardTextFieldAmount = new TextField(cardAmount.getText());
+		Button newAddCardButton = new Button(addCard.getText());
+		Button newMinusCardButton = new Button(minusCard.getText());
+		EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {			
+			@Override
+			public void handle(ActionEvent event) {
+				onNumericClick(event);
+			}
+		};
+		newAddCardButton.setOnAction(event);
+		newMinusCardButton.setOnAction(event);
+		
+		newCard.getChildren().add(newCardTextFieldName);
+		newCard.getChildren().add(newCardTextFieldAmount);
+		newCard.getChildren().add(newAddCardButton);
+		newCard.getChildren().add(newMinusCardButton);
 		deckList.getChildren().add(newCard);
 		
 	}

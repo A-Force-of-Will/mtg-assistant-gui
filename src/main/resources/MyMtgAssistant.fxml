@@ -165,7 +165,7 @@
                      <font>
                         <Font size="10.0" />
                      </font>
-                     f         </Button>
+                        </Button>
                </children>
             </HBox>
             <ScrollPane prefHeight="435.0" prefWidth="238.0">
