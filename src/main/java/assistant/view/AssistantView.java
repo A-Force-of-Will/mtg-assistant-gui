@@ -92,9 +92,9 @@ public class AssistantView {
 	}
 	
 	public void onResetAllClick(ActionEvent e) {
-		deckName.setText("Deck Name"); 
 		onResetTokensClick(e);
 		onResetCountersClick(e);
+		deckName.setText("Deck Name"); 
 		p1Name.setText("Player Name");
 		p2Name.setText("Player Name");
 		p3Name.setText("Player Name");
