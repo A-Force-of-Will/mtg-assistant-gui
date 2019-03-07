@@ -149,7 +149,7 @@
             <TextField fx:id="deckName" alignment="CENTER" prefHeight="31.0" prefWidth="197.0" text="Deck Name" />
             <HBox prefHeight="31.0" prefWidth="209.0">
                <children>
-                  <TextField alignment="CENTER" prefHeight="31.0" prefWidth="99.0" text="Card">
+                  <TextField fx:id="cardName" alignment="CENTER" prefHeight="31.0" prefWidth="99.0" text="Card">
                      <font>
                         <Font size="12.0" />
                      </font>
