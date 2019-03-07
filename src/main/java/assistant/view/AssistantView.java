@@ -26,7 +26,7 @@ public class AssistantView {
 	private TextField deckName;
 	
 	@FXML
-	private Button addCard_0, minusCard_0;
+	private Button addMinusCard_0, addMinusCard_1;
 	
 	@FXML
 	private TextField cardName, cardAmount_0;
@@ -70,8 +70,8 @@ public class AssistantView {
 		//make a button
 		TextField newCardTextFieldName = new TextField(cardName.getText());
 		TextField newCardTextFieldAmount = new TextField(cardAmount_0.getText());
-		Button newAddCardButton = new Button(addCard_0.getText());
-		Button newMinusCardButton = new Button(minusCard_0.getText());
+		Button newAddCardButton = new Button(addMinusCard_0.getText());
+		Button newMinusCardButton = new Button(addMinusCard_1.getText());
 		Button newPercentCardButton = new Button("%");
 		
 		EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {			
@@ -235,12 +235,9 @@ public class AssistantView {
 			int t8 = controller.onUpdateRequested(tokenAmount_t8, result);
 			tokenAmount_t8.setText("" + t8);
 			break;
-		case "addCard":
+		case "addMinusCard":
 			int card0 = controller.onUpdateRequested(cardAmount_0, result);
 			cardAmount_0.setText("" + card0);
-		case "minusCard":
-			int card1 = controller.onUpdateRequested(cardAmount_0, result);
-			cardAmount_0.setText("" + card1);
 		}
 	}
 

@@ -155,12 +155,12 @@
                      </font>
                   </TextField>
                   <TextField fx:id="cardAmount_0" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="0" />
-                  <Button fx:id="addCard_0" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="32.0" text="+1">
+                  <Button fx:id="addMinusCard_0" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="32.0" text="+1">
                      <font>
                         <Font size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="minusCard_0" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
+                  <Button fx:id="addMinusCard_1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-1" textAlignment="CENTER">
                      <font>
                         <Font size="12.0" />
                      </font></Button>
