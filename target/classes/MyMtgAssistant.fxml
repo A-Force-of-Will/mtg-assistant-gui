@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assistant.view.AssistantView">
-   <left>
+  <left>
       <VBox prefHeight="428.0" prefWidth="186.0" BorderPane.alignment="CENTER">
          <children>
             <VBox prefHeight="111.0" prefWidth="186.0">
@@ -146,7 +146,7 @@
    <right>
       <VBox prefHeight="496.0" prefWidth="238.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="deckName" alignment="CENTER" text="Deck Name" />
+            <TextField fx:id="deckName" alignment="CENTER" prefHeight="31.0" prefWidth="197.0" text="Deck Name" />
             <HBox prefHeight="31.0" prefWidth="209.0">
                <children>
                   <TextField alignment="CENTER" prefHeight="31.0" prefWidth="99.0" text="Card">
@@ -154,24 +154,27 @@
                         <Font size="12.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="cardAmount" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="#" />
-                  <Button fx:id="addCard" mnemonicParsing="false" prefHeight="31.0" prefWidth="23.0" text="+">
+                  <TextField fx:id="cardAmount" alignment="CENTER" prefHeight="31.0" prefWidth="37.0" text="0" />
+                  <Button fx:id="addCard" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="23.0" text="+">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="minusCard" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="-" textAlignment="CENTER" />
-                  <Button fx:id="insertCard" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" text="Add">
+                  <Button fx:id="minusCard" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0" text="-" textAlignment="CENTER" />
+                  <Button fx:id="insertCard" mnemonicParsing="false" onAction="#onCardAddRequestClick" prefHeight="38.0" prefWidth="38.0" text="Add">
                      <font>
                         <Font size="10.0" />
                      </font>
-                  </Button>
+                     f         </Button>
                </children>
             </HBox>
             <ScrollPane prefHeight="435.0" prefWidth="238.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="431.0" prefWidth="218.0" />
-              </content>
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="218.0">
+                     <children>
+                        <VBox layoutX="1.0" prefHeight="408.0" prefWidth="217.0" />
+                     </children></AnchorPane>
+               </content>
             </ScrollPane>
          </children></VBox>
    </right>
@@ -489,7 +492,7 @@
                                     <Button fx:id="t8m1" mnemonicParsing="false" onAction="#onNumericClick" prefHeight="31.0" prefWidth="35.0" text="-1" textAlignment="CENTER" />
                                  </children>
                               </HBox>
-                              <Button fx:id="resetTokens" onAction="#onResetTokensClick" mnemonicParsing="false" prefHeight="94.0" prefWidth="173.0" text="Reset Tokens" />
+                              <Button fx:id="resetTokens" mnemonicParsing="false" onAction="#onResetTokensClick" prefHeight="94.0" prefWidth="173.0" text="Reset Tokens" />
                               <Label prefHeight="33.0" prefWidth="174.0" text=", Keagan York &amp; Zane Stockton">
                                  <font>
                                     <Font size="12.0" />
