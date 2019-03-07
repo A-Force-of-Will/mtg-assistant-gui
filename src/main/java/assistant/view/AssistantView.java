@@ -110,7 +110,6 @@ public class AssistantView {
 		String p = b.getId();
 		int number = Integer.parseInt(b.getText());
 		updateResult(p, number);
-//		field.setText(field.getText() + number);
 	}
 
 	public void updateResult(String field, int result) {
