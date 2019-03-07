@@ -3,8 +3,11 @@ package assistant.view;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import mtgcollab.controller.AssistantController;
 import assistant.view.AssistantView;
@@ -14,6 +17,9 @@ public class AssistantView {
 	private Stage stage;
 
 	private AssistantController controller;
+	
+	@FXML
+	private VBox deckList;
 	
 	@FXML
 	private TextField deckName;
@@ -50,6 +56,13 @@ public class AssistantView {
 	}
 
 	public void onResetDeckClick(ActionEvent e) {
+	}
+	
+	public void onCardAddRequestClick(ActionEvent e) {
+		System.out.println("HEY");
+		HBox newCard = new HBox();
+		newCard.getChildren().add(new TextField("HELLO"));
+		deckList.getChildren().add(newCard);
 		
 	}
 	
