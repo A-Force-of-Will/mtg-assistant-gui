@@ -72,6 +72,8 @@ public class AssistantView {
 		TextField newCardTextFieldAmount = new TextField(cardAmount.getText());
 		Button newAddCardButton = new Button(addCard.getText());
 		Button newMinusCardButton = new Button(minusCard.getText());
+		Button newPercentCardButton = new Button("%");
+		
 		EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {			
 			@Override
 			public void handle(ActionEvent event) {
@@ -85,6 +87,7 @@ public class AssistantView {
 		newCard.getChildren().add(newCardTextFieldAmount);
 		newCard.getChildren().add(newAddCardButton);
 		newCard.getChildren().add(newMinusCardButton);
+		newCard.getChildren().add(newPercentCardButton);
 		deckList.getChildren().add(newCard);
 		
 	}
@@ -149,9 +152,9 @@ public class AssistantView {
 	}
 
 	public void updateResult(String field, int result) {
-		String[] players = field.split("_");
+		String[] updatedResult = field.split("_");
 		
-		switch (players[0]) {
+		switch (updatedResult[0]) {
 		case "p1":
 			int p1 = controller.onUpdateRequested(p1Life, result);
 			p1Life.setText("" + p1);
