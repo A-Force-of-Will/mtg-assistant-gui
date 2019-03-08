@@ -222,7 +222,7 @@
                      <children>
                         <VBox prefHeight="404.0" prefWidth="165.0">
                            <children>
-                              <Label alignment="CENTER" prefHeight="29.0" prefWidth="240.0" text="Counters" textAlignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="31.0" prefWidth="240.0" text="Counters" textAlignment="CENTER" />
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
                                     <TextField fx:id="counter1" alignment="CENTER" prefHeight="31.0" prefWidth="63.0" text="Counter">
@@ -383,7 +383,7 @@
                                     </Button>
                                  </children>
                               </HBox>
-                              <Button mnemonicParsing="false" onAction="#onResetCountersClick" prefHeight="95.0" prefWidth="161.0" text="Reset Counters" />
+                              <Button mnemonicParsing="false" onAction="#onResetCountersClick" prefHeight="93.0" prefWidth="161.0" text="Reset Counters" />
                               <Label prefHeight="32.0" prefWidth="158.0" text="Created By: Daniil Baydak">
                                  <font>
                                     <Font size="14.0" />
@@ -393,7 +393,7 @@
                         </VBox>
                         <VBox prefHeight="404.0" prefWidth="181.0">
                            <children>
-                              <Label alignment="CENTER" prefHeight="29.0" prefWidth="240.0" text="Tokens" textAlignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="32.0" prefWidth="240.0" text="Tokens" textAlignment="CENTER" />
                               <HBox prefHeight="31.0" prefWidth="216.0">
                                  <children>
                                     <TextField fx:id="token1" alignment="CENTER" prefHeight="31.0" prefWidth="63.0" text="Token">
