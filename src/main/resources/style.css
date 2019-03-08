@@ -1,0 +1,131 @@
+#p1Life {
+	-fx-background-color: #D4FFC8;
+}
+
+#p2Life {
+	-fx-background-color: #D4FFC8;
+}
+
+#p3Life {
+	-fx-background-color: #D4FFC8;
+}
+
+#p4Life {
+	-fx-background-color: #D4FFC8;
+}
+
+#p1Name {
+	-fx-background-color: #E4FBFF;
+}
+
+#p2Name {
+	-fx-background-color: #E4FBFF;
+}
+
+#p3Name {
+	-fx-background-color: #E4FBFF;
+}
+
+#p4Name {
+	-fx-background-color: #E4FBFF;
+}
+
+#p1_minus10 {
+	-fx-text-fill: crimson;
+}
+
+#p2_minus10 {
+	-fx-text-fill: crimson;
+}
+
+#p3_minus10 {
+	-fx-text-fill: crimson;
+}
+
+#p4_minus10 {
+	-fx-text-fill: crimson;
+}
+
+#p1_minus5 {
+	-fx-text-fill: crimson;
+}
+
+#p2_minus5 {
+	-fx-text-fill: crimson;
+}
+
+#p3_minus5 {
+	-fx-text-fill: crimson;
+}
+
+#p4_minus5 {
+	-fx-text-fill: crimson;
+}
+
+#p1_minus1 {
+	-fx-text-fill: crimson;
+}
+
+#p2_minus1 {
+	-fx-text-fill: crimson;
+}
+
+#p3_minus1 {
+	-fx-text-fill: crimson;
+}
+
+#p4_minus1 {
+	-fx-text-fill: crimson;
+}
+
+#p1_add10 {
+	-fx-text-fill: green;
+}
+
+#p2_add10 {
+	-fx-text-fill: green;
+}
+
+#p3_add10 {
+	-fx-text-fill: green;
+}
+
+#p4_plus10 {
+	-fx-text-fill: green;
+}
+
+#p1_add5 {
+	-fx-text-fill: green;
+}
+
+#p2_add5 {
+	-fx-text-fill: green;
+}
+
+#p3_add5 {
+	-fx-text-fill: green;
+}
+
+#p4_plus5 {
+	-fx-text-fill: green;
+}
+
+#p1_add1 {
+	-fx-text-fill: green;
+}
+
+#p2_add1 {
+	-fx-text-fill: green;
+}
+
+#p3_add1 {
+	-fx-text-fill: green;
+}
+
+#p4_plus1 {
+	-fx-text-fill: green;
+}
+
+HBox {
+	-fx-background-color: #B6E8E0;
+}
