@@ -70,6 +70,8 @@ public class AssistantView {
 	}
 
 	public void onResetDeckClick(ActionEvent e) {
+		cardName.setText("Card Name");
+		cardAmount_0.setText("0");
 		deckList.getChildren().clear();
 		textFieldList.clear();
 	}
