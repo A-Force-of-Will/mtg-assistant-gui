@@ -3,6 +3,7 @@ package assistant.view;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Optional;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -10,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
@@ -66,10 +68,17 @@ public class AssistantView {
 	}
 
 	public void onResetDeckClick(ActionEvent e) {
+		Alert a = new Alert(AlertType.WARNING,"Are you sure that you want to reset your deck?",ButtonType.YES,ButtonType.CANCEL);
+		Optional<ButtonType> result = a.showAndWait();
+		if(result.isPresent() && result.get() == ButtonType.YES) {
 		cardName.setText("Card Name");
 		cardAmount_0.setText("0");
 		deckList.getChildren().clear();
 		textFieldList.clear();
+		}
+		else {
+			return;
+		}
 	}
 
 	public void onCardAddRequestClick(ActionEvent e) {
@@ -140,6 +149,9 @@ public class AssistantView {
 	}
 
 	public void onResetCountersClick(ActionEvent e) {
+		Alert a = new Alert(AlertType.WARNING,"Are you sure that you want to reset your counters?",ButtonType.YES,ButtonType.CANCEL);
+		Optional<ButtonType> result = a.showAndWait();
+		if(result.isPresent() && result.get() == ButtonType.YES) {
 		counter1.setText("Counter");
 		counter2.setText("Counter");
 		counter3.setText("Counter");
@@ -156,9 +168,16 @@ public class AssistantView {
 		counterAmount_c6.setText("" + 0);
 		counterAmount_c7.setText("" + 0);
 		counterAmount_c8.setText("" + 0);
+		}
+		else {
+			return;
+		}
 	}
 
 	public void onResetTokensClick(ActionEvent e) {
+		Alert a = new Alert(AlertType.WARNING,"Are you sure that you want to reset your tokens?",ButtonType.YES,ButtonType.CANCEL);
+		Optional<ButtonType> result = a.showAndWait();
+		if(result.isPresent() && result.get() == ButtonType.YES) {
 		token1.setText("Token");
 		token2.setText("Token");
 		token3.setText("Token");
@@ -175,9 +194,16 @@ public class AssistantView {
 		tokenAmount_t6.setText("" + 0);
 		tokenAmount_t7.setText("" + 0);
 		tokenAmount_t8.setText("" + 0);
+		}
+		else {
+			return;
+		}
 	}
 
 	public void onResetAllClick(ActionEvent e) {
+		Alert a = new Alert(AlertType.WARNING,"Are you sure that you want to reset EVERYTHING??",ButtonType.YES,ButtonType.CANCEL);
+		Optional<ButtonType> result = a.showAndWait();
+		if(result.isPresent() && result.get() == ButtonType.YES) {
 		onResetDeckClick(e);
 		onResetTokensClick(e);
 		onResetCountersClick(e);
@@ -190,6 +216,10 @@ public class AssistantView {
 		p2Life.setText("" + 20);
 		p3Life.setText("" + 20);
 		p4Life.setText("" + 20);
+		}
+		else {
+			return;
+		}
 	}
 
 	public void onNumericClick(ActionEvent e) {
