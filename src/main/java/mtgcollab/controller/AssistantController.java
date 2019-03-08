@@ -19,30 +19,6 @@ public class AssistantController {
 	public void run() {
 		this.view.init();
 	}
-	
-	public void addCard() {
-		
-	}
-	
-	public void editCard(Card card) {
-		
-	}
-	
-	public void deleteCard(Card card) {
-		
-	}
-	
-	public void addDeck() {
-		
-	}
-	
-	public void editDeck(Deck deck) {
-		
-	}
-	
-	public void deleteDeck(Deck deck) {
-		
-	}
 
 	public int onUpdateRequested(TextField field, int result) {
 		String f = field.getText();
