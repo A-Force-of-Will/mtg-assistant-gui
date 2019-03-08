@@ -264,10 +264,10 @@
 		</VBox>
 	</right>
 	<center>
-		<HBox prefHeight="496.0" prefWidth="349.0"
+		<HBox prefHeight="496.0" prefWidth="345.0"
 			BorderPane.alignment="CENTER">
 			<children>
-				<VBox prefHeight="496.0" prefWidth="333.0">
+				<VBox prefHeight="496.0" prefWidth="336.0">
 					<children>
 						<HBox prefHeight="100.0" prefWidth="200.0">
 							<children>
@@ -275,7 +275,7 @@
 									<children>
 										<Button mnemonicParsing="false"
 											onAction="#onResetAllClick" prefHeight="94.0"
-											prefWidth="179.0" text="Reset All" />
+											prefWidth="193.0" text="Reset All" />
 									</children>
 								</HBox>
 								<HBox prefHeight="100.0" prefWidth="200.0">
@@ -291,9 +291,9 @@
 							<children>
 								<VBox prefHeight="404.0" prefWidth="165.0">
 									<children>
-										<Label alignment="CENTER" prefHeight="29.0"
+										<Label alignment="CENTER" prefHeight="32.0"
 											prefWidth="240.0" text="Counters" textAlignment="CENTER" />
-										<HBox prefHeight="31.0" prefWidth="216.0">
+										<HBox prefHeight="21.0" prefWidth="216.0">
 											<children>
 												<TextField fx:id="counter1" alignment="CENTER"
 													prefHeight="31.0" prefWidth="63.0" text="Counter">
@@ -522,9 +522,9 @@
 								</VBox>
 								<VBox prefHeight="404.0" prefWidth="181.0">
 									<children>
-										<Label alignment="CENTER" prefHeight="29.0"
+										<Label alignment="CENTER" prefHeight="32.0"
 											prefWidth="240.0" text="Tokens" textAlignment="CENTER" />
-										<HBox prefHeight="31.0" prefWidth="216.0">
+										<HBox prefHeight="28.0" prefWidth="216.0">
 											<children>
 												<TextField fx:id="token1" alignment="CENTER"
 													prefHeight="31.0" prefWidth="63.0" text="Token">
