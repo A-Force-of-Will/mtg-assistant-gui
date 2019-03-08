@@ -71,6 +71,7 @@ public class AssistantView {
 
 	public void onResetDeckClick(ActionEvent e) {
 		deckList.getChildren().clear();
+		textFieldList.clear();
 	}
 	
 	public void onCardAddRequestClick(ActionEvent e) {
