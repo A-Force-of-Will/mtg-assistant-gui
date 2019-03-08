@@ -9,12 +9,16 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
 	minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0"
 	prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
 	xmlns:fx="http://javafx.com/fxml/1"
 	fx:controller="assistant.view.AssistantView" stylesheets="style.css">
+	
 	<left>
 		<VBox prefHeight="428.0" prefWidth="186.0"
 			BorderPane.alignment="CENTER">
@@ -270,14 +274,14 @@
 								<HBox prefHeight="93.0" prefWidth="183.0">
 									<children>
 										<Button mnemonicParsing="false"
-											onAction="#onResetAllClick" prefHeight="92.0"
+											onAction="#onResetAllClick" prefHeight="94.0"
 											prefWidth="179.0" text="Reset All" />
 									</children>
 								</HBox>
 								<HBox prefHeight="100.0" prefWidth="200.0">
 									<children>
 										<Button mnemonicParsing="false"
-											onAction="#onResetDeckClick" prefHeight="97.0"
+											onAction="#onResetDeckClick" prefHeight="94.0"
 											prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
 									</children>
 								</HBox>
