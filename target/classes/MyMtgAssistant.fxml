@@ -10,6 +10,720 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0"
+	prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="assistant.view.AssistantView" stylesheets="style.css">
+	<left>
+		<VBox prefHeight="428.0" prefWidth="186.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<VBox prefHeight="111.0" prefWidth="186.0">
+					<children>
+						<HBox prefHeight="105.0" prefWidth="182.0">
+							<children>
+								<VBox prefHeight="105.0" prefWidth="56.0">
+									<children>
+										<Button fx:id="p1_minus10" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="64.0"
+											text="-10" />
+										<Button fx:id="p1_minus5" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="77.0"
+											text="-5" />
+										<Button fx:id="p1_minus1" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0"
+											prefWidth="114.0" text="-1" />
+									</children>
+								</VBox>
+								<VBox prefHeight="89.0" prefWidth="75.0">
+									<children>
+										<TextField fx:id="p1Life" alignment="CENTER"
+											prefHeight="96.0" prefWidth="75.0" text="20">
+											<font>
+												<Font size="25.0" />
+											</font>
+										</TextField>
+									</children>
+								</VBox>
+								<VBox prefHeight="81.0" prefWidth="56.0">
+									<children>
+										<Button fx:id="p1_add10" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="0.0" prefWidth="56.0"
+											text="+10" />
+										<Button fx:id="p1_add5" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="12.0" prefWidth="56.0"
+											text="+5" />
+										<Button fx:id="p1_add1" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="4.0" prefWidth="56.0"
+											text="+1" />
+									</children>
+								</VBox>
+							</children>
+						</HBox>
+						<TextField fx:id="p1Name" alignment="CENTER"
+							text="Player Name" />
+					</children>
+				</VBox>
+				<VBox prefHeight="111.0" prefWidth="186.0">
+					<children>
+						<HBox prefHeight="105.0" prefWidth="182.0">
+							<children>
+								<VBox prefHeight="105.0" prefWidth="56.0">
+									<children>
+										<Button fx:id="p2_minus10" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="72.0"
+											text="-10" />
+										<Button fx:id="p2_minus5" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="79.0"
+											text="-5" />
+										<Button fx:id="p2_minus1" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="64.0"
+											text="-1" />
+									</children>
+								</VBox>
+								<VBox prefHeight="89.0" prefWidth="75.0">
+									<children>
+										<TextField fx:id="p2Life" alignment="CENTER"
+											prefHeight="96.0" prefWidth="75.0" text="20">
+											<font>
+												<Font size="25.0" />
+											</font>
+										</TextField>
+									</children>
+								</VBox>
+								<VBox prefHeight="81.0" prefWidth="56.0">
+									<children>
+										<Button fx:id="p2_add10" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="0.0" prefWidth="56.0"
+											text="+10" />
+										<Button fx:id="p2_add5" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="12.0" prefWidth="56.0"
+											text="+5" />
+										<Button fx:id="p2_add1" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="4.0" prefWidth="56.0"
+											text="+1" />
+									</children>
+								</VBox>
+							</children>
+						</HBox>
+						<TextField fx:id="p2Name" alignment="CENTER"
+							text="Player Name" />
+					</children>
+				</VBox>
+				<VBox prefHeight="111.0" prefWidth="186.0">
+					<children>
+						<HBox prefHeight="105.0" prefWidth="182.0">
+							<children>
+								<VBox prefHeight="105.0" prefWidth="56.0">
+									<children>
+										<Button fx:id="p3_minus10" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="85.0"
+											text="-10" />
+										<Button fx:id="p3_minus5" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="81.0"
+											text="-5" />
+										<Button fx:id="p3_minus1" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0"
+											prefWidth="102.0" text="-1" />
+									</children>
+								</VBox>
+								<VBox prefHeight="89.0" prefWidth="75.0">
+									<children>
+										<TextField fx:id="p3Life" alignment="CENTER"
+											prefHeight="96.0" prefWidth="75.0" text="20">
+											<font>
+												<Font size="25.0" />
+											</font>
+										</TextField>
+									</children>
+								</VBox>
+								<VBox prefHeight="81.0" prefWidth="56.0">
+									<children>
+										<Button fx:id="p3_add10" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="0.0" prefWidth="56.0"
+											text="+10" />
+										<Button fx:id="p3_add5" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="12.0" prefWidth="56.0"
+											text="+5" />
+										<Button fx:id="p3_add1" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="4.0" prefWidth="56.0"
+											text="+1" />
+									</children>
+								</VBox>
+							</children>
+						</HBox>
+						<TextField fx:id="p3Name" alignment="CENTER"
+							text="Player Name" />
+					</children>
+				</VBox>
+				<VBox prefHeight="111.0" prefWidth="186.0">
+					<children>
+						<HBox prefHeight="105.0" prefWidth="182.0">
+							<children>
+								<VBox prefHeight="105.0" prefWidth="56.0">
+									<children>
+										<Button fx:id="p4_minus10" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="81.0"
+											text="-10" />
+										<Button fx:id="p4_minus5" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0" prefWidth="75.0"
+											text="-5" />
+										<Button fx:id="p4_minus1" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="31.0"
+											prefWidth="113.0" text="-1" />
+									</children>
+								</VBox>
+								<VBox prefHeight="89.0" prefWidth="75.0">
+									<children>
+										<TextField fx:id="p4Life" alignment="CENTER"
+											prefHeight="96.0" prefWidth="75.0" text="20">
+											<font>
+												<Font size="25.0" />
+											</font>
+										</TextField>
+									</children>
+								</VBox>
+								<VBox prefHeight="81.0" prefWidth="56.0">
+									<children>
+										<Button fx:id="p4_plus10" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="0.0" prefWidth="56.0"
+											text="+10" />
+										<Button fx:id="p4_plus5" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="12.0" prefWidth="56.0"
+											text="+5" />
+										<Button fx:id="p4_plus1" mnemonicParsing="false"
+											onAction="#onNumericClick" prefHeight="4.0" prefWidth="56.0"
+											text="+1" />
+									</children>
+								</VBox>
+							</children>
+						</HBox>
+					</children>
+				</VBox>
+				<TextField fx:id="p4Name" alignment="CENTER"
+					text="Player Name" />
+			</children>
+		</VBox>
+	</left>
+	<right>
+		<VBox prefHeight="496.0" prefWidth="238.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<TextField fx:id="deckName" alignment="CENTER"
+					prefHeight="31.0" prefWidth="197.0" text="Deck Name" />
+				<HBox prefHeight="31.0" prefWidth="209.0">
+					<children>
+						<TextField fx:id="cardName" alignment="CENTER"
+							prefHeight="31.0" prefWidth="99.0" text="Card">
+							<font>
+								<Font size="12.0" />
+							</font>
+						</TextField>
+						<TextField fx:id="cardAmount_0" alignment="CENTER"
+							prefHeight="31.0" prefWidth="37.0" text="0" />
+						<Button fx:id="addMinusCard_0" mnemonicParsing="false"
+							onAction="#onNumericClick" prefHeight="31.0" prefWidth="32.0"
+							text="+1">
+							<font>
+								<Font size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="addMinusCard_1" mnemonicParsing="false"
+							onAction="#onNumericClick" prefHeight="31.0" prefWidth="31.0"
+							text="-1" textAlignment="CENTER">
+							<font>
+								<Font size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="insertCard" mnemonicParsing="false"
+							onAction="#onCardAddRequestClick" prefHeight="38.0"
+							prefWidth="38.0" text="Add">
+							<font>
+								<Font size="10.0" />
+							</font>
+						</Button>
+					</children>
+				</HBox>
+				<ScrollPane prefHeight="435.0" prefWidth="238.0">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="857.0" prefWidth="218.0">
+							<children>
+								<VBox fx:id="deckList" layoutX="1.0" prefHeight="652.0"
+									prefWidth="217.0" />
+							</children>
+						</AnchorPane>
+					</content>
+				</ScrollPane>
+			</children>
+		</VBox>
+	</right>
+	<center>
+		<HBox prefHeight="496.0" prefWidth="349.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<VBox prefHeight="496.0" prefWidth="333.0">
+					<children>
+						<HBox prefHeight="100.0" prefWidth="200.0">
+							<children>
+								<HBox prefHeight="93.0" prefWidth="183.0">
+									<children>
+										<Button mnemonicParsing="false"
+											onAction="#onResetAllClick" prefHeight="92.0"
+											prefWidth="179.0" text="Reset All" />
+									</children>
+								</HBox>
+								<HBox prefHeight="100.0" prefWidth="200.0">
+									<children>
+										<Button mnemonicParsing="false"
+											onAction="#onResetDeckClick" prefHeight="97.0"
+											prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
+									</children>
+								</HBox>
+							</children>
+						</HBox>
+						<HBox prefHeight="411.0" prefWidth="369.0">
+							<children>
+								<VBox prefHeight="404.0" prefWidth="165.0">
+									<children>
+										<Label alignment="CENTER" prefHeight="29.0"
+											prefWidth="240.0" text="Counters" textAlignment="CENTER" />
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="counter1" alignment="CENTER"
+													prefHeight="31.0" prefWidth="63.0" text="Counter">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="counterAmount_c1"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="34.0" text="0" />
+												<Button fx:id="c1_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="+1">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+												<Button fx:id="c1_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="31.0" text="-1" textAlignment="CENTER">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</Button>
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="counter2" alignment="CENTER"
+													prefHeight="31.0" prefWidth="61.0" text="Counter">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="counterAmount_c2"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="35.0" text="0" />
+												<Button fx:id="c2_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="+1">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+												<Button fx:id="c2_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="31.0" text="-1" textAlignment="CENTER">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="counter3" alignment="CENTER"
+													prefHeight="31.0" prefWidth="61.0" text="Counter">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="counterAmount_c3"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="35.0" text="0" />
+												<Button fx:id="c3_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="+1">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+												<Button fx:id="c3_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="31.0" text="-1" textAlignment="CENTER">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="counter4" alignment="CENTER"
+													prefHeight="31.0" prefWidth="60.0" text="Counter">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="counterAmount_c4"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="35.0" text="0" />
+												<Button fx:id="c4_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="34.0" text="+1">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+												<Button fx:id="c4_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="31.0" text="-1" textAlignment="CENTER">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="counter5" alignment="CENTER"
+													prefHeight="31.0" prefWidth="61.0" text="Counter">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="counterAmount_c5"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="35.0" text="0" />
+												<Button fx:id="c5_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="34.0" text="+1">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+												<Button fx:id="c5_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="31.0" text="-1" textAlignment="CENTER">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="counter6" alignment="CENTER"
+													prefHeight="31.0" prefWidth="61.0" text="Counter">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="counterAmount_c6"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="35.0" text="0" />
+												<Button fx:id="c6_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="+1">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+												<Button fx:id="c6_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="31.0" text="-1" textAlignment="CENTER">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</Button>
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="counter7" alignment="CENTER"
+													prefHeight="31.0" prefWidth="60.0" text="Counter">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="counterAmount_c7"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="36.0" text="0" />
+												<Button fx:id="c7_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="34.0" text="+1">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+												<Button fx:id="c7_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="31.0" text="-1" textAlignment="CENTER">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="counter8" alignment="CENTER"
+													prefHeight="31.0" prefWidth="60.0" text="Counter">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="counterAmount_c8"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="c8_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="37.0" text="+1">
+													<font>
+														<Font size="13.0" />
+													</font>
+												</Button>
+												<Button fx:id="c8_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="31.0" text="-1" textAlignment="CENTER">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</Button>
+											</children>
+										</HBox>
+										<Button mnemonicParsing="false"
+											onAction="#onResetCountersClick" prefHeight="95.0"
+											prefWidth="161.0" text="Reset Counters" />
+										<Label prefHeight="32.0" prefWidth="158.0"
+											text="Created By: Daniil Baydak">
+											<font>
+												<Font size="14.0" />
+											</font>
+										</Label>
+									</children>
+								</VBox>
+								<VBox prefHeight="404.0" prefWidth="181.0">
+									<children>
+										<Label alignment="CENTER" prefHeight="29.0"
+											prefWidth="240.0" text="Tokens" textAlignment="CENTER" />
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="token1" alignment="CENTER"
+													prefHeight="31.0" prefWidth="63.0" text="Token">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="tokenAmount_t1"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="t1_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="39.0" text="+1">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Button>
+												<Button fx:id="t1_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="-1" textAlignment="CENTER" />
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="token2" alignment="CENTER"
+													prefHeight="31.0" prefWidth="63.0" text="Token">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="tokenAmount_t2"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="t2_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="38.0" text="+1">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Button>
+												<Button fx:id="t2_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="36.0" text="-1" textAlignment="CENTER" />
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="token3" alignment="CENTER"
+													prefHeight="31.0" prefWidth="64.0" text="Token">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="tokenAmount_t3"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="t3_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="38.0" text="+1">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Button>
+												<Button fx:id="t3_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="-1" textAlignment="CENTER" />
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="token4" alignment="CENTER"
+													prefHeight="31.0" prefWidth="64.0" text="Token">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="tokenAmount_t4"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="t4_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="38.0" text="+1">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Button>
+												<Button fx:id="t4_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="-1" textAlignment="CENTER" />
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="token5" alignment="CENTER"
+													prefHeight="31.0" prefWidth="64.0" text="Token">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="tokenAmount_t5"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="t5_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="38.0" text="+1">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Button>
+												<Button fx:id="t5_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="-1" textAlignment="CENTER" />
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="token6" alignment="CENTER"
+													prefHeight="31.0" prefWidth="64.0" text="Token">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="tokenAmount_t6"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="t6_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="38.0" text="+1">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Button>
+												<Button fx:id="t6_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="-1" textAlignment="CENTER" />
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="token7" alignment="CENTER"
+													prefHeight="31.0" prefWidth="64.0" text="Token">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="tokenAmount_t7"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="t7_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="38.0" text="+1">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Button>
+												<Button fx:id="t7_m1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="-1" textAlignment="CENTER" />
+											</children>
+										</HBox>
+										<HBox prefHeight="31.0" prefWidth="216.0">
+											<children>
+												<TextField fx:id="token8" alignment="CENTER"
+													prefHeight="31.0" prefWidth="64.0" text="Token">
+													<font>
+														<Font size="12.0" />
+													</font>
+												</TextField>
+												<TextField fx:id="tokenAmount_t8"
+													alignment="CENTER" onAction="#onNumericClick"
+													prefHeight="31.0" prefWidth="37.0" text="0" />
+												<Button fx:id="t8_a1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="38.0" text="+1">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Button>
+												<Button fx:id="t8_1" mnemonicParsing="false"
+													onAction="#onNumericClick" prefHeight="31.0"
+													prefWidth="35.0" text="-1" textAlignment="CENTER" />
+											</children>
+										</HBox>
+										<Button fx:id="resetTokens" mnemonicParsing="false"
+											onAction="#onResetTokensClick" prefHeight="94.0"
+											prefWidth="173.0" text="Reset Tokens" />
+										<Label prefHeight="33.0" prefWidth="174.0"
+											text=", Keagan York &amp; Zane Stockton">
+											<font>
+												<Font size="12.0" />
+											</font>
+										</Label>
+									</children>
+								</VBox>
+							</children>
+						</HBox>
+					</children>
+				</VBox>
+			</children>
+		</HBox>
+	</center>
+=======
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assistant.view.AssistantView">
   <left>
       <VBox prefHeight="428.0" prefWidth="186.0" BorderPane.alignment="CENTER">
@@ -149,7 +863,7 @@
             <TextField fx:id="deckName" alignment="CENTER" prefHeight="31.0" prefWidth="197.0" text="Deck Name" />
             <HBox prefHeight="31.0" prefWidth="209.0">
                <children>
-                  <TextField fx:id="cardName" alignment="CENTER" prefHeight="31.0" prefWidth="99.0" text="Card">
+                  <TextField fx:id="cardName" alignment="CENTER" prefHeight="31.0" prefWidth="99.0" text="Card Name">
                      <font>
                         <Font size="12.0" />
                      </font>
@@ -509,4 +1223,5 @@
             </VBox>
          </children></HBox>
    </center>
+>>>>>>> 6de5c3342bc9ff31ddfee52211db102cc0adf926
 </BorderPane>
