@@ -68,15 +68,15 @@ public class AssistantView {
 	}
 
 	public void onResetDeckClick(ActionEvent e) {
-		Alert a = new Alert(AlertType.WARNING,"Are you sure that you want to reset your deck?",ButtonType.YES,ButtonType.CANCEL);
+		Alert a = new Alert(AlertType.WARNING, "Are you sure that you want to reset your deck?", ButtonType.YES,
+				ButtonType.CANCEL);
 		Optional<ButtonType> result = a.showAndWait();
-		if(result.isPresent() && result.get() == ButtonType.YES) {
-		cardName.setText("Card Name");
-		cardAmount_0.setText("0");
-		deckList.getChildren().clear();
-		textFieldList.clear();
-		}
-		else {
+		if (result.isPresent() && result.get() == ButtonType.YES) {
+			cardName.setText("Card Name");
+			cardAmount_0.setText("0");
+			deckList.getChildren().clear();
+			textFieldList.clear();
+		} else {
 			return;
 		}
 	}
@@ -149,75 +149,86 @@ public class AssistantView {
 	}
 
 	public void onResetCountersClick(ActionEvent e) {
-		Alert a = new Alert(AlertType.WARNING,"Are you sure that you want to reset your counters?",ButtonType.YES,ButtonType.CANCEL);
+		Alert a = new Alert(AlertType.WARNING, "Are you sure that you want to reset your counters?", ButtonType.YES,
+				ButtonType.CANCEL);
 		Optional<ButtonType> result = a.showAndWait();
-		if(result.isPresent() && result.get() == ButtonType.YES) {
-		counter1.setText("Counter");
-		counter2.setText("Counter");
-		counter3.setText("Counter");
-		counter4.setText("Counter");
-		counter5.setText("Counter");
-		counter6.setText("Counter");
-		counter7.setText("Counter");
-		counter8.setText("Counter");
-		counterAmount_c1.setText("" + 0);
-		counterAmount_c2.setText("" + 0);
-		counterAmount_c3.setText("" + 0);
-		counterAmount_c4.setText("" + 0);
-		counterAmount_c5.setText("" + 0);
-		counterAmount_c6.setText("" + 0);
-		counterAmount_c7.setText("" + 0);
-		counterAmount_c8.setText("" + 0);
-		}
-		else {
+		if (result.isPresent() && result.get() == ButtonType.YES) {
+			counter1.setText("Counter");
+			counter2.setText("Counter");
+			counter3.setText("Counter");
+			counter4.setText("Counter");
+			counter5.setText("Counter");
+			counter6.setText("Counter");
+			counter7.setText("Counter");
+			counter8.setText("Counter");
+			counterAmount_c1.setText("" + 0);
+			counterAmount_c2.setText("" + 0);
+			counterAmount_c3.setText("" + 0);
+			counterAmount_c4.setText("" + 0);
+			counterAmount_c5.setText("" + 0);
+			counterAmount_c6.setText("" + 0);
+			counterAmount_c7.setText("" + 0);
+			counterAmount_c8.setText("" + 0);
+		} else {
 			return;
 		}
 	}
 
 	public void onResetTokensClick(ActionEvent e) {
-		Alert a = new Alert(AlertType.WARNING,"Are you sure that you want to reset your tokens?",ButtonType.YES,ButtonType.CANCEL);
+		Alert a = new Alert(AlertType.WARNING, "Are you sure that you want to reset your tokens?", ButtonType.YES,
+				ButtonType.CANCEL);
 		Optional<ButtonType> result = a.showAndWait();
-		if(result.isPresent() && result.get() == ButtonType.YES) {
-		token1.setText("Token");
-		token2.setText("Token");
-		token3.setText("Token");
-		token4.setText("Token");
-		token5.setText("Token");
-		token6.setText("Token");
-		token7.setText("Token");
-		token8.setText("Token");
-		tokenAmount_t1.setText("" + 0);
-		tokenAmount_t2.setText("" + 0);
-		tokenAmount_t3.setText("" + 0);
-		tokenAmount_t4.setText("" + 0);
-		tokenAmount_t5.setText("" + 0);
-		tokenAmount_t6.setText("" + 0);
-		tokenAmount_t7.setText("" + 0);
-		tokenAmount_t8.setText("" + 0);
+		if (result.isPresent() && result.get() == ButtonType.YES) {
+			token1.setText("Token");
+			token2.setText("Token");
+			token3.setText("Token");
+			token4.setText("Token");
+			token5.setText("Token");
+			token6.setText("Token");
+			token7.setText("Token");
+			token8.setText("Token");
+			tokenAmount_t1.setText("" + 0);
+			tokenAmount_t2.setText("" + 0);
+			tokenAmount_t3.setText("" + 0);
+			tokenAmount_t4.setText("" + 0);
+			tokenAmount_t5.setText("" + 0);
+			tokenAmount_t6.setText("" + 0);
+			tokenAmount_t7.setText("" + 0);
+			tokenAmount_t8.setText("" + 0);
+		} else {
+			return;
 		}
-		else {
+	}
+
+	public void playerReset() {
+		Alert a = new Alert(AlertType.WARNING, "Are you sure that you want to reset ALL players?", ButtonType.YES,
+				ButtonType.CANCEL);
+		Optional<ButtonType> result = a.showAndWait();
+		if (result.isPresent() && result.get() == ButtonType.YES) {
+			p1Name.setText("Player Name");
+			p2Name.setText("Player Name");
+			p3Name.setText("Player Name");
+			p4Name.setText("Player Name");
+			p1Life.setText("" + 20);
+			p2Life.setText("" + 20);
+			p3Life.setText("" + 20);
+			p4Life.setText("" + 20);
+		} else {
 			return;
 		}
 	}
 
 	public void onResetAllClick(ActionEvent e) {
-		Alert a = new Alert(AlertType.WARNING,"Are you sure that you want to reset EVERYTHING??",ButtonType.YES,ButtonType.CANCEL);
+		Alert a = new Alert(AlertType.WARNING, "Are you sure that you want to reset EVERYTHING??", ButtonType.YES,
+				ButtonType.CANCEL);
 		Optional<ButtonType> result = a.showAndWait();
-		if(result.isPresent() && result.get() == ButtonType.YES) {
-		onResetDeckClick(e);
-		onResetTokensClick(e);
-		onResetCountersClick(e);
-		deckName.setText("Deck Name");
-		p1Name.setText("Player Name");
-		p2Name.setText("Player Name");
-		p3Name.setText("Player Name");
-		p4Name.setText("Player Name");
-		p1Life.setText("" + 20);
-		p2Life.setText("" + 20);
-		p3Life.setText("" + 20);
-		p4Life.setText("" + 20);
-		}
-		else {
+		if (result.isPresent() && result.get() == ButtonType.YES) {
+			onResetDeckClick(e);
+			onResetTokensClick(e);
+			onResetCountersClick(e);
+			playerReset();
+			deckName.setText("Deck Name");
+		} else {
 			return;
 		}
 	}
