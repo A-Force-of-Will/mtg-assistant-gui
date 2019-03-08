@@ -200,7 +200,7 @@ public class AssistantView {
 		}
 	}
 
-	public void playerReset() {
+	public void onResetPlayersClick(ActionEvent e) {
 		Alert a = new Alert(AlertType.WARNING, "Are you sure that you want to reset ALL players?", ButtonType.YES,
 				ButtonType.CANCEL);
 		Optional<ButtonType> result = a.showAndWait();
@@ -226,7 +226,7 @@ public class AssistantView {
 			onResetDeckClick(e);
 			onResetTokensClick(e);
 			onResetCountersClick(e);
-			playerReset();
+			onResetPlayersClick(e);
 			deckName.setText("Deck Name");
 		} else {
 			return;
