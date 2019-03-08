@@ -70,13 +70,14 @@ public class AssistantView {
 	}
 
 	public void onResetDeckClick(ActionEvent e) {
+		deckList.getChildren().clear();
 	}
 	
 	public void onCardAddRequestClick(ActionEvent e) {
 		Font font = new Font(null, 12);
 		HBox newCard = new HBox();
 		//make a button
-		TextField newCardTextFieldName = new TextField(cardName.getText());
+		final TextField newCardTextFieldName = new TextField(cardName.getText());
 		final TextField newCardTextFieldAmount = new TextField(cardAmount_0.getText());
 		Button newAddCardButton = new Button(addMinusCard_0.getText());
 		Button newMinusCardButton = new Button(addMinusCard_1.getText());
@@ -110,7 +111,7 @@ public class AssistantView {
 				double percentResult = (Integer.parseInt(newCardTextFieldAmount.getText()) / totalCards)*100;
 				df.setRoundingMode(RoundingMode.CEILING);
 				
-				Alert a = new Alert(AlertType.INFORMATION,"The odds of you drawing this card are " + df.format(percentResult) + "%");
+				Alert a = new Alert(AlertType.INFORMATION,"The odds of you drawing " + newCardTextFieldName.getText() + " are " + df.format(percentResult) + "%");
 				a.show();
 			}
 		};
