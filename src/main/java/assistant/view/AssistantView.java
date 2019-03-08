@@ -229,67 +229,131 @@ public class AssistantView {
 			break;
 		case "c1":
 			int c1 = controller.onUpdateRequested(counterAmount_c1, result);
-			counterAmount_c1.setText("" + c1);
+			if (c1 <= 0) {
+				counterAmount_c1.setText("0");
+			} else {
+				counterAmount_c1.setText("" + c1);
+			}
 			break;
 		case "c2":
 			int c2 = controller.onUpdateRequested(counterAmount_c2, result);
-			counterAmount_c2.setText("" + c2);
+			if (c2 <= 0) {
+				counterAmount_c2.setText("0");
+			} else {
+				counterAmount_c2.setText("" + c2);
+			}
 			break;
 		case "c3":
 			int c3 = controller.onUpdateRequested(counterAmount_c3, result);
-			counterAmount_c3.setText("" + c3);
+			if (c3 <= 0) {
+				counterAmount_c3.setText("0");
+			} else {
+				counterAmount_c3.setText("" + c3);
+			}
 			break;
 		case "c4":
 			int c4 = controller.onUpdateRequested(counterAmount_c4, result);
-			counterAmount_c4.setText("" + c4);
+			if (c4 <= 0) {
+				counterAmount_c4.setText("0");
+			} else {
+				counterAmount_c4.setText("" + c4);
+			}
 			break;
 		case "c5":
 			int c5 = controller.onUpdateRequested(counterAmount_c5, result);
-			counterAmount_c5.setText("" + c5);
+			if (c5 <= 0) {
+				counterAmount_c5.setText("0");
+			} else {
+				counterAmount_c5.setText("" + c5);
+			}
 			break;
 		case "c6":
 			int c6 = controller.onUpdateRequested(counterAmount_c6, result);
-			counterAmount_c6.setText("" + c6);
+			if (c6 <= 0) {
+				counterAmount_c6.setText("0");
+			} else {
+				counterAmount_c6.setText("" + c6);
+			}
 			break;
 		case "c7":
 			int c7 = controller.onUpdateRequested(counterAmount_c7, result);
-			counterAmount_c7.setText("" + c7);
+			if (c7 <= 0) {
+				counterAmount_c7.setText("0");
+			} else {
+				counterAmount_c7.setText("" + c7);
+			}
 			break;
 		case "c8":
 			int c8 = controller.onUpdateRequested(counterAmount_c8, result);
-			counterAmount_c8.setText("" + c8);
+			if (c8 <= 0) {
+				counterAmount_c8.setText("0");
+			} else {
+				counterAmount_c8.setText("" + c8);
+			}
 			break;
 		case "t1":
 			int t1 = controller.onUpdateRequested(tokenAmount_t1, result);
-			tokenAmount_t1.setText("" + t1);
+			if (t1 <= 0) {
+				tokenAmount_t1.setText("0");
+			} else {
+				tokenAmount_t1.setText("" + t1);
+			}
 			break;
 		case "t2":
 			int t2 = controller.onUpdateRequested(tokenAmount_t2, result);
-			tokenAmount_t2.setText("" + t2);
+			if (t2 <= 0) {
+				tokenAmount_t2.setText("0");
+			} else {
+				tokenAmount_t2.setText("" + t2);
+			}
 			break;
 		case "t3":
 			int t3 = controller.onUpdateRequested(tokenAmount_t3, result);
-			tokenAmount_t3.setText("" + t3);
+			if (t3 <= 0) {
+				tokenAmount_t3.setText("0");
+			} else {
+				tokenAmount_t3.setText("" + t3);
+			}
 			break;
 		case "t4":
 			int t4 = controller.onUpdateRequested(tokenAmount_t4, result);
-			tokenAmount_t4.setText("" + t4);
+			if (t4 <= 0) {
+				tokenAmount_t4.setText("0");
+			} else {
+				tokenAmount_t4.setText("" + t4);
+			}
 			break;
 		case "t5":
 			int t5 = controller.onUpdateRequested(tokenAmount_t5, result);
-			tokenAmount_t5.setText("" + t5);
+			if (t5 <= 0) {
+				tokenAmount_t5.setText("0");
+			} else {
+				tokenAmount_t5.setText("" + t5);
+			}
 			break;
 		case "t6":
 			int t6 = controller.onUpdateRequested(tokenAmount_t6, result);
-			tokenAmount_t6.setText("" + t6);
+			if (t6 <= 0) {
+				tokenAmount_t6.setText("0");
+			} else {
+				tokenAmount_t6.setText("" + t6);
+			}
 			break;
 		case "t7":
 			int t7 = controller.onUpdateRequested(tokenAmount_t7, result);
-			tokenAmount_t7.setText("" + t7);
+			if (t7 <= 0) {
+				tokenAmount_t7.setText("0");
+			} else {
+				tokenAmount_t7.setText("" + t7);
+			}
 			break;
 		case "t8":
 			int t8 = controller.onUpdateRequested(tokenAmount_t8, result);
-			tokenAmount_t8.setText("" + t8);
+			if (t8 <= 0) {
+				tokenAmount_t8.setText("0");
+			} else {
+				tokenAmount_t8.setText("" + t8);
+			}
 			break;
 		case "addMinusCard":
 			int card0 = controller.onUpdateRequested(cardAmount_0, result);
