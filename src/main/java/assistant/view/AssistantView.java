@@ -200,7 +200,11 @@ public class AssistantView {
 	private void onNumericClickPlus(Button b, TextField t) {
 		int number = Integer.parseInt(b.getText());
 		int result = controller.onUpdateRequested(t, number);
-		t.setText("" + result);
+		if (result <= 0) {
+			t.setText("0");
+		} else {
+			t.setText("" + result);
+		}
 	}
 
 	public void updateResult(String field, int result) {
