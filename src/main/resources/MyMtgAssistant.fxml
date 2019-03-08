@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<<<<<<< HEAD
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
 	minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0"
 	prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
@@ -1223,5 +1222,4 @@
             </VBox>
          </children></HBox>
    </center>
->>>>>>> 6de5c3342bc9ff31ddfee52211db102cc0adf926
 </BorderPane>
