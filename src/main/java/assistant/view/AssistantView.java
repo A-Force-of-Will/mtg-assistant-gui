@@ -1,17 +1,22 @@
 package assistant.view;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import mtgcollab.controller.AssistantController;
-import assistant.view.AssistantView;
 
 public class AssistantView {
 
@@ -54,6 +59,8 @@ public class AssistantView {
 	private TextField tokenAmount_t1, tokenAmount_t2,
 	tokenAmount_t3, tokenAmount_t4, tokenAmount_t5,
 	tokenAmount_t6, tokenAmount_t7, tokenAmount_t8;
+	
+	private ArrayList<TextField> textFieldList = new ArrayList<>();
 
 	public void init() {
 		this.stage.setTitle("MTG Assistant");
@@ -66,30 +73,69 @@ public class AssistantView {
 	}
 	
 	public void onCardAddRequestClick(ActionEvent e) {
+		Font font = new Font(null, 12);
 		HBox newCard = new HBox();
 		//make a button
 		TextField newCardTextFieldName = new TextField(cardName.getText());
-		TextField newCardTextFieldAmount = new TextField(cardAmount_0.getText());
+		final TextField newCardTextFieldAmount = new TextField(cardAmount_0.getText());
 		Button newAddCardButton = new Button(addMinusCard_0.getText());
 		Button newMinusCardButton = new Button(addMinusCard_1.getText());
 		Button newPercentCardButton = new Button("%");
 		
+		newCardTextFieldAmount.setMaxSize(30, 10);
+		newCardTextFieldAmount.setFont(font);
+		newCardTextFieldName.setMaxSize(100, 10);
+		newCardTextFieldName.setFont(font);
+		newAddCardButton.setMaxSize(32, 10);
+		newAddCardButton.setFont(font);
+		newMinusCardButton.setMaxSize(32, 10);
+		newMinusCardButton.setFont(font);
+		newPercentCardButton.setMaxSize(32, 10);
+		newPercentCardButton.setFont(font);
+		
 		EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {			
 			@Override
 			public void handle(ActionEvent event) {
-				onNumericClick(event);
+				Button b = (Button) event.getSource();
+				onNumericClickPlus(b, newCardTextFieldAmount);
+			}
+		};
+		
+		EventHandler<ActionEvent> percentEvent = new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				DecimalFormat df = new DecimalFormat("#.##");
+				double totalCards = textFieldReader();
+				double percentResult = (Integer.parseInt(newCardTextFieldAmount.getText()) / totalCards)*100;
+				df.setRoundingMode(RoundingMode.CEILING);
+				
+				Alert a = new Alert(AlertType.INFORMATION,"The odds of you drawing this card are " + df.format(percentResult) + "%");
+				a.show();
 			}
 		};
 		newAddCardButton.setOnAction(event);
 		newMinusCardButton.setOnAction(event);
+		newPercentCardButton.setOnAction(percentEvent);
 		
 		newCard.getChildren().add(newCardTextFieldName);
 		newCard.getChildren().add(newCardTextFieldAmount);
 		newCard.getChildren().add(newAddCardButton);
 		newCard.getChildren().add(newMinusCardButton);
 		newCard.getChildren().add(newPercentCardButton);
+		
+		textFieldList.add(newCardTextFieldAmount);
 		deckList.getChildren().add(newCard);
 		
+	}
+	
+	public int textFieldReader() {
+		int total = 0;
+		for(int i = 0; i < textFieldList.size();i++) {
+			int num = Integer.parseInt(textFieldList.get(i).getText());
+			total += num;
+		}
+		return total;
 	}
 	
 	public void onResetCountersClick(ActionEvent e) {
@@ -149,6 +195,12 @@ public class AssistantView {
 		String p = b.getId();
 		int number = Integer.parseInt(b.getText());
 		updateResult(p, number);
+	}
+	
+	private void onNumericClickPlus(Button b, TextField t) {
+		int number = Integer.parseInt(b.getText());
+		int result = controller.onUpdateRequested(t, number);
+		t.setText("" + result);
 	}
 
 	public void updateResult(String field, int result) {
