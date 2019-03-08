@@ -179,6 +179,7 @@ public class AssistantView {
 	}
 	
 	public void onResetAllClick(ActionEvent e) {
+		onResetDeckClick(e);
 		onResetTokensClick(e);
 		onResetCountersClick(e);
 		deckName.setText("Deck Name"); 
