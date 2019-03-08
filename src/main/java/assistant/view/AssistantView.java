@@ -23,43 +23,39 @@ public class AssistantView {
 	private Stage stage;
 
 	private AssistantController controller;
-	
-	@FXML
-	private VBox deckList;
-	
-	@FXML
-	private TextField deckName;
-	
-	@FXML
-	private Button addMinusCard_0, addMinusCard_1;
-	
-	@FXML
-	private TextField cardName, cardAmount_0;
-	
-	@FXML
-	private TextField p1Name, p2Name, p3Name, p4Name;
-	
-	@FXML
-	private TextField p1Life, p2Life, p3Life, p4Life;
-	
-	@FXML
-	private TextField counter1, counter2, counter3, counter4, 
-	counter5, counter6, counter7, counter8;
-	
-	@FXML
-	private TextField counterAmount_c1, counterAmount_c2,
-	counterAmount_c3, counterAmount_c4, counterAmount_c5,
-	counterAmount_c6, counterAmount_c7, counterAmount_c8;
 
 	@FXML
-	private TextField token1, token2, token3, token4,
-	token5, token6, token7, token8;
-	
+	private VBox deckList;
+
 	@FXML
-	private TextField tokenAmount_t1, tokenAmount_t2,
-	tokenAmount_t3, tokenAmount_t4, tokenAmount_t5,
-	tokenAmount_t6, tokenAmount_t7, tokenAmount_t8;
-	
+	private TextField deckName;
+
+	@FXML
+	private Button addMinusCard_0, addMinusCard_1;
+
+	@FXML
+	private TextField cardName, cardAmount_0;
+
+	@FXML
+	private TextField p1Name, p2Name, p3Name, p4Name;
+
+	@FXML
+	private TextField p1Life, p2Life, p3Life, p4Life;
+
+	@FXML
+	private TextField counter1, counter2, counter3, counter4, counter5, counter6, counter7, counter8;
+
+	@FXML
+	private TextField counterAmount_c1, counterAmount_c2, counterAmount_c3, counterAmount_c4, counterAmount_c5,
+			counterAmount_c6, counterAmount_c7, counterAmount_c8;
+
+	@FXML
+	private TextField token1, token2, token3, token4, token5, token6, token7, token8;
+
+	@FXML
+	private TextField tokenAmount_t1, tokenAmount_t2, tokenAmount_t3, tokenAmount_t4, tokenAmount_t5, tokenAmount_t6,
+			tokenAmount_t7, tokenAmount_t8;
+
 	private ArrayList<TextField> textFieldList = new ArrayList<>();
 
 	public void init() {
@@ -73,17 +69,17 @@ public class AssistantView {
 		deckList.getChildren().clear();
 		textFieldList.clear();
 	}
-	
+
 	public void onCardAddRequestClick(ActionEvent e) {
 		Font font = new Font(null, 12);
 		HBox newCard = new HBox();
-		//make a button
+		// make a button
 		final TextField newCardTextFieldName = new TextField(cardName.getText());
 		final TextField newCardTextFieldAmount = new TextField(cardAmount_0.getText());
 		Button newAddCardButton = new Button(addMinusCard_0.getText());
 		Button newMinusCardButton = new Button(addMinusCard_1.getText());
 		Button newPercentCardButton = new Button("%");
-		
+
 		newCardTextFieldAmount.setMaxSize(30, 10);
 		newCardTextFieldAmount.setFont(font);
 		newCardTextFieldName.setMaxSize(100, 10);
@@ -94,52 +90,53 @@ public class AssistantView {
 		newMinusCardButton.setFont(font);
 		newPercentCardButton.setMaxSize(32, 10);
 		newPercentCardButton.setFont(font);
-		
-		EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {			
+
+		EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
 				Button b = (Button) event.getSource();
 				onNumericClickPlus(b, newCardTextFieldAmount);
 			}
 		};
-		
+
 		EventHandler<ActionEvent> percentEvent = new EventHandler<ActionEvent>() {
 
 			@Override
 			public void handle(ActionEvent event) {
 				DecimalFormat df = new DecimalFormat("#.##");
 				double totalCards = textFieldReader();
-				double percentResult = (Integer.parseInt(newCardTextFieldAmount.getText()) / totalCards)*100;
+				double percentResult = (Integer.parseInt(newCardTextFieldAmount.getText()) / totalCards) * 100;
 				df.setRoundingMode(RoundingMode.CEILING);
-				
-				Alert a = new Alert(AlertType.INFORMATION,"The odds of you drawing " + newCardTextFieldName.getText() + " are " + df.format(percentResult) + "%");
+
+				Alert a = new Alert(AlertType.INFORMATION, "The odds of you drawing " + newCardTextFieldName.getText()
+						+ " are " + df.format(percentResult) + "%");
 				a.show();
 			}
 		};
 		newAddCardButton.setOnAction(event);
 		newMinusCardButton.setOnAction(event);
 		newPercentCardButton.setOnAction(percentEvent);
-		
+
 		newCard.getChildren().add(newCardTextFieldName);
 		newCard.getChildren().add(newCardTextFieldAmount);
 		newCard.getChildren().add(newAddCardButton);
 		newCard.getChildren().add(newMinusCardButton);
 		newCard.getChildren().add(newPercentCardButton);
-		
+
 		textFieldList.add(newCardTextFieldAmount);
 		deckList.getChildren().add(newCard);
-		
+
 	}
-	
+
 	public int textFieldReader() {
 		int total = 0;
-		for(int i = 0; i < textFieldList.size();i++) {
+		for (int i = 0; i < textFieldList.size(); i++) {
 			int num = Integer.parseInt(textFieldList.get(i).getText());
 			total += num;
 		}
 		return total;
 	}
-	
+
 	public void onResetCountersClick(ActionEvent e) {
 		counter1.setText("Counter");
 		counter2.setText("Counter");
@@ -158,7 +155,7 @@ public class AssistantView {
 		counterAmount_c7.setText("" + 0);
 		counterAmount_c8.setText("" + 0);
 	}
-	
+
 	public void onResetTokensClick(ActionEvent e) {
 		token1.setText("Token");
 		token2.setText("Token");
@@ -175,14 +172,14 @@ public class AssistantView {
 		tokenAmount_t5.setText("" + 0);
 		tokenAmount_t6.setText("" + 0);
 		tokenAmount_t7.setText("" + 0);
-		tokenAmount_t8.setText("" + 0);	
+		tokenAmount_t8.setText("" + 0);
 	}
-	
+
 	public void onResetAllClick(ActionEvent e) {
 		onResetDeckClick(e);
 		onResetTokensClick(e);
 		onResetCountersClick(e);
-		deckName.setText("Deck Name"); 
+		deckName.setText("Deck Name");
 		p1Name.setText("Player Name");
 		p2Name.setText("Player Name");
 		p3Name.setText("Player Name");
@@ -190,16 +187,16 @@ public class AssistantView {
 		p1Life.setText("" + 20);
 		p2Life.setText("" + 20);
 		p3Life.setText("" + 20);
-		p4Life.setText("" + 20);	
+		p4Life.setText("" + 20);
 	}
-	
+
 	public void onNumericClick(ActionEvent e) {
 		Button b = (Button) e.getSource();
 		String p = b.getId();
 		int number = Integer.parseInt(b.getText());
 		updateResult(p, number);
 	}
-	
+
 	private void onNumericClickPlus(Button b, TextField t) {
 		int number = Integer.parseInt(b.getText());
 		int result = controller.onUpdateRequested(t, number);
@@ -208,7 +205,7 @@ public class AssistantView {
 
 	public void updateResult(String field, int result) {
 		String[] updatedResult = field.split("_");
-		
+
 		switch (updatedResult[0]) {
 		case "p1":
 			int p1 = controller.onUpdateRequested(p1Life, result);
@@ -292,7 +289,11 @@ public class AssistantView {
 			break;
 		case "addMinusCard":
 			int card0 = controller.onUpdateRequested(cardAmount_0, result);
-			cardAmount_0.setText("" + card0);
+			if (card0 <= 0) {
+				cardAmount_0.setText("0");
+			} else {
+				cardAmount_0.setText("" + card0);
+			}
 		}
 	}
 
