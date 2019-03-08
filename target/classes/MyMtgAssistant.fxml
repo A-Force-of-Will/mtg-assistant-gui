@@ -509,7 +509,7 @@
 												</Button>
 											</children>
 										</HBox>
-										<Button mnemonicParsing="false"
+										<Button fx:id="resetCounters" mnemonicParsing="false"
 											onAction="#onResetCountersClick" prefHeight="95.0"
 											prefWidth="161.0" text="Reset Counters" />
 										<Label prefHeight="32.0" prefWidth="158.0"
