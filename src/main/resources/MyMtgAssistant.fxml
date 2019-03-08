@@ -273,14 +273,14 @@
 							<children>
 								<HBox prefHeight="93.0" prefWidth="183.0">
 									<children>
-										<Button mnemonicParsing="false"
+										<Button fx:id="resetAll" mnemonicParsing="false"
 											onAction="#onResetAllClick" prefHeight="94.0"
 											prefWidth="193.0" text="Reset All" />
 									</children>
 								</HBox>
 								<HBox prefHeight="100.0" prefWidth="200.0">
 									<children>
-										<Button mnemonicParsing="false"
+										<Button fx:id="resetDeck" mnemonicParsing="false"
 											onAction="#onResetDeckClick" prefHeight="94.0"
 											prefWidth="193.0" text="Reset Deck" textAlignment="CENTER" />
 									</children>

@@ -1,5 +1,14 @@
+left VBox {
+	-fx-background-color: crimson;
+}
+
 #p1Life {
 	-fx-background-color: #D4FFC8;
+	-fx-opacity: 1.0;
+}
+
+#p1DeadLife {
+	-fx-text-fill: crimson;
 }
 
 #p2Life {
@@ -31,7 +40,7 @@
 }
 
 #p1_minus10 {
-	-fx-text-fill: crimson;
+	-fx-text-fill: crimson; 
 }
 
 #p2_minus10 {
@@ -124,6 +133,22 @@
 
 #p4_plus1 {
 	-fx-text-fill: green;
+}
+
+#resetAll {
+	-fx-text-fill: crimson;
+}
+
+#resetDeck {
+	-fx-text-fill: crimson;
+}
+
+#resetCounters {
+	-fx-text-fill: crimson;
+}
+
+#resetTokens {
+	-fx-text-fill: crimson;
 }
 
 HBox {
