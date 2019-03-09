@@ -1,5 +1,5 @@
-left VBox {
-	-fx-background-color: crimson;
+#deckList {
+	-fx-background-color: darkgray;
 }
 
 #p1Life {
