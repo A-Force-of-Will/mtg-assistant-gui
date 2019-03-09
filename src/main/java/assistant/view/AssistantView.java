@@ -59,7 +59,7 @@ public class AssistantView {
 			tokenAmount_t7, tokenAmount_t8;
 
 	private ArrayList<TextField> textFieldList = new ArrayList<>();
-     
+
 	public void init() {
 		this.stage.setTitle("MTG Assistant");
 		this.stage.getIcons()
@@ -100,7 +100,7 @@ public class AssistantView {
 		newMinusCardButton.setMaxSize(32, 10);
 		newMinusCardButton.setFont(font);
 		newPercentCardButton.setMaxSize(32, 10);
-		newPercentCardButton.setFont(font); 
+		newPercentCardButton.setFont(font);
 
 		EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
 			@Override
@@ -127,7 +127,7 @@ public class AssistantView {
 		newAddCardButton.setOnAction(event);
 		newMinusCardButton.setOnAction(event);
 		newPercentCardButton.setOnAction(percentEvent);
-		
+
 		newCard.getChildren().add(newCardTextFieldName);
 		newCard.getChildren().add(newCardTextFieldAmount);
 		newCard.getChildren().add(newAddCardButton);
@@ -248,6 +248,7 @@ public class AssistantView {
 			t.setOpacity(0.3);
 		} else {
 			t.setText("" + result);
+			t.setOpacity(1.0);
 		}
 	}
 
@@ -257,19 +258,43 @@ public class AssistantView {
 		switch (updatedResult[0]) {
 		case "p1":
 			long p1 = controller.onUpdateRequested(p1Life, result);
-			p1Life.setText("" + p1);
+			if (p1 <= 0) {
+				p1Life.setText("" + p1);
+				p1Life.setOpacity(0.3);
+			} else {
+				p1Life.setText("" + p1);
+				p1Life.setOpacity(1.0);
+			}
 			break;
 		case "p2":
 			long p2 = controller.onUpdateRequested(p2Life, result);
-			p2Life.setText("" + p2);
+			if (p2 <= 0) {
+				p2Life.setText("" + p2);
+				p2Life.setOpacity(0.3);
+			} else {
+				p2Life.setText("" + p2);
+				p2Life.setOpacity(1.0);
+			}
 			break;
 		case "p3":
 			long p3 = controller.onUpdateRequested(p3Life, result);
-			p3Life.setText("" + p3);
+			if (p3 <= 0) {
+				p3Life.setText("" + p3);
+				p3Life.setOpacity(0.3);
+			} else {
+				p3Life.setText("" + p3);
+				p3Life.setOpacity(1.0);
+			}
 			break;
 		case "p4":
 			long p4 = controller.onUpdateRequested(p4Life, result);
-			p4Life.setText("" + p4);
+			if (p4 <= 0) {
+				p4Life.setText("" + p4);
+				p4Life.setOpacity(0.3);
+			} else {
+				p4Life.setText("" + p4);
+				p4Life.setOpacity(1.0);
+			}
 			break;
 		case "c1":
 			long c1 = controller.onUpdateRequested(counterAmount_c1, result);
