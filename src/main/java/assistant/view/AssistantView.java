@@ -59,7 +59,7 @@ public class AssistantView {
 			tokenAmount_t7, tokenAmount_t8;
 
 	private ArrayList<TextField> textFieldList = new ArrayList<>();
-
+     
 	public void init() {
 		this.stage.setTitle("MTG Assistant");
 		this.stage.getIcons()
@@ -100,7 +100,7 @@ public class AssistantView {
 		newMinusCardButton.setMaxSize(32, 10);
 		newMinusCardButton.setFont(font);
 		newPercentCardButton.setMaxSize(32, 10);
-		newPercentCardButton.setFont(font);
+		newPercentCardButton.setFont(font); 
 
 		EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
 			@Override
