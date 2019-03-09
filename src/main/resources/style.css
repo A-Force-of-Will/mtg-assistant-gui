@@ -1,6 +1,4 @@
-#deckList {
-	-fx-background-color: darkgray;
-}
+
 
 #p1Life {
 	-fx-background-color: #D4FFC8;
@@ -156,5 +154,5 @@
 }
 
 HBox {
-	-fx-background-color: #B6E8E0;
+	-fx-background-color: #BABABA;
 }
