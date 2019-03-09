@@ -20,9 +20,9 @@ public class AssistantController {
 		this.view.init();
 	}
 
-	public int onUpdateRequested(TextField field, int result) {
+	public long onUpdateRequested(TextField field, long result) {
 		String f = field.getText();
-		int hp = Integer.parseInt(f);
+		long hp = Long.parseLong(f);
 		 return hp += result;
 	}
 }

@@ -116,7 +116,7 @@ public class AssistantView {
 			public void handle(ActionEvent event) {
 				DecimalFormat df = new DecimalFormat("#.##");
 				double totalCards = textFieldReader();
-				double percentResult = (Integer.parseInt(newCardTextFieldAmount.getText()) / totalCards) * 100;
+				double percentResult = (Long.parseLong(newCardTextFieldAmount.getText()) / totalCards) * 100;
 				df.setRoundingMode(RoundingMode.CEILING);
 
 				Alert a = new Alert(AlertType.INFORMATION, "The odds of you drawing " + newCardTextFieldName.getText()
@@ -127,7 +127,7 @@ public class AssistantView {
 		newAddCardButton.setOnAction(event);
 		newMinusCardButton.setOnAction(event);
 		newPercentCardButton.setOnAction(percentEvent);
-
+		
 		newCard.getChildren().add(newCardTextFieldName);
 		newCard.getChildren().add(newCardTextFieldAmount);
 		newCard.getChildren().add(newAddCardButton);
@@ -139,10 +139,10 @@ public class AssistantView {
 
 	}
 
-	public int textFieldReader() {
-		int total = 0;
+	public long textFieldReader() {
+		long total = 0;
 		for (int i = 0; i < textFieldList.size(); i++) {
-			int num = Integer.parseInt(textFieldList.get(i).getText());
+			long num = Long.parseLong(textFieldList.get(i).getText());
 			total += num;
 		}
 		return total;
@@ -236,42 +236,43 @@ public class AssistantView {
 	public void onNumericClick(ActionEvent e) {
 		Button b = (Button) e.getSource();
 		String p = b.getId();
-		int number = Integer.parseInt(b.getText());
+		long number = Long.parseLong(b.getText());
 		updateResult(p, number);
 	}
 
 	private void onNumericClickPlus(Button b, TextField t) {
-		int number = Integer.parseInt(b.getText());
-		int result = controller.onUpdateRequested(t, number);
+		long number = Long.parseLong(b.getText());
+		long result = controller.onUpdateRequested(t, number);
 		if (result <= 0) {
 			t.setText("0");
+			t.setOpacity(0.3);
 		} else {
 			t.setText("" + result);
 		}
 	}
 
-	public void updateResult(String field, int result) {
+	public void updateResult(String field, long result) {
 		String[] updatedResult = field.split("_");
 
 		switch (updatedResult[0]) {
 		case "p1":
-			int p1 = controller.onUpdateRequested(p1Life, result);
+			long p1 = controller.onUpdateRequested(p1Life, result);
 			p1Life.setText("" + p1);
 			break;
 		case "p2":
-			int p2 = controller.onUpdateRequested(p2Life, result);
+			long p2 = controller.onUpdateRequested(p2Life, result);
 			p2Life.setText("" + p2);
 			break;
 		case "p3":
-			int p3 = controller.onUpdateRequested(p3Life, result);
+			long p3 = controller.onUpdateRequested(p3Life, result);
 			p3Life.setText("" + p3);
 			break;
 		case "p4":
-			int p4 = controller.onUpdateRequested(p4Life, result);
+			long p4 = controller.onUpdateRequested(p4Life, result);
 			p4Life.setText("" + p4);
 			break;
 		case "c1":
-			int c1 = controller.onUpdateRequested(counterAmount_c1, result);
+			long c1 = controller.onUpdateRequested(counterAmount_c1, result);
 			if (c1 <= 0) {
 				counterAmount_c1.setText("0");
 			} else {
@@ -279,7 +280,7 @@ public class AssistantView {
 			}
 			break;
 		case "c2":
-			int c2 = controller.onUpdateRequested(counterAmount_c2, result);
+			long c2 = controller.onUpdateRequested(counterAmount_c2, result);
 			if (c2 <= 0) {
 				counterAmount_c2.setText("0");
 			} else {
@@ -287,7 +288,7 @@ public class AssistantView {
 			}
 			break;
 		case "c3":
-			int c3 = controller.onUpdateRequested(counterAmount_c3, result);
+			long c3 = controller.onUpdateRequested(counterAmount_c3, result);
 			if (c3 <= 0) {
 				counterAmount_c3.setText("0");
 			} else {
@@ -295,7 +296,7 @@ public class AssistantView {
 			}
 			break;
 		case "c4":
-			int c4 = controller.onUpdateRequested(counterAmount_c4, result);
+			long c4 = controller.onUpdateRequested(counterAmount_c4, result);
 			if (c4 <= 0) {
 				counterAmount_c4.setText("0");
 			} else {
@@ -303,7 +304,7 @@ public class AssistantView {
 			}
 			break;
 		case "c5":
-			int c5 = controller.onUpdateRequested(counterAmount_c5, result);
+			long c5 = controller.onUpdateRequested(counterAmount_c5, result);
 			if (c5 <= 0) {
 				counterAmount_c5.setText("0");
 			} else {
@@ -311,7 +312,7 @@ public class AssistantView {
 			}
 			break;
 		case "c6":
-			int c6 = controller.onUpdateRequested(counterAmount_c6, result);
+			long c6 = controller.onUpdateRequested(counterAmount_c6, result);
 			if (c6 <= 0) {
 				counterAmount_c6.setText("0");
 			} else {
@@ -319,7 +320,7 @@ public class AssistantView {
 			}
 			break;
 		case "c7":
-			int c7 = controller.onUpdateRequested(counterAmount_c7, result);
+			long c7 = controller.onUpdateRequested(counterAmount_c7, result);
 			if (c7 <= 0) {
 				counterAmount_c7.setText("0");
 			} else {
@@ -327,7 +328,7 @@ public class AssistantView {
 			}
 			break;
 		case "c8":
-			int c8 = controller.onUpdateRequested(counterAmount_c8, result);
+			long c8 = controller.onUpdateRequested(counterAmount_c8, result);
 			if (c8 <= 0) {
 				counterAmount_c8.setText("0");
 			} else {
@@ -335,7 +336,7 @@ public class AssistantView {
 			}
 			break;
 		case "t1":
-			int t1 = controller.onUpdateRequested(tokenAmount_t1, result);
+			long t1 = controller.onUpdateRequested(tokenAmount_t1, result);
 			if (t1 <= 0) {
 				tokenAmount_t1.setText("0");
 			} else {
@@ -343,7 +344,7 @@ public class AssistantView {
 			}
 			break;
 		case "t2":
-			int t2 = controller.onUpdateRequested(tokenAmount_t2, result);
+			long t2 = controller.onUpdateRequested(tokenAmount_t2, result);
 			if (t2 <= 0) {
 				tokenAmount_t2.setText("0");
 			} else {
@@ -351,7 +352,7 @@ public class AssistantView {
 			}
 			break;
 		case "t3":
-			int t3 = controller.onUpdateRequested(tokenAmount_t3, result);
+			long t3 = controller.onUpdateRequested(tokenAmount_t3, result);
 			if (t3 <= 0) {
 				tokenAmount_t3.setText("0");
 			} else {
@@ -359,7 +360,7 @@ public class AssistantView {
 			}
 			break;
 		case "t4":
-			int t4 = controller.onUpdateRequested(tokenAmount_t4, result);
+			long t4 = controller.onUpdateRequested(tokenAmount_t4, result);
 			if (t4 <= 0) {
 				tokenAmount_t4.setText("0");
 			} else {
@@ -367,7 +368,7 @@ public class AssistantView {
 			}
 			break;
 		case "t5":
-			int t5 = controller.onUpdateRequested(tokenAmount_t5, result);
+			long t5 = controller.onUpdateRequested(tokenAmount_t5, result);
 			if (t5 <= 0) {
 				tokenAmount_t5.setText("0");
 			} else {
@@ -375,7 +376,7 @@ public class AssistantView {
 			}
 			break;
 		case "t6":
-			int t6 = controller.onUpdateRequested(tokenAmount_t6, result);
+			long t6 = controller.onUpdateRequested(tokenAmount_t6, result);
 			if (t6 <= 0) {
 				tokenAmount_t6.setText("0");
 			} else {
@@ -383,7 +384,7 @@ public class AssistantView {
 			}
 			break;
 		case "t7":
-			int t7 = controller.onUpdateRequested(tokenAmount_t7, result);
+			long t7 = controller.onUpdateRequested(tokenAmount_t7, result);
 			if (t7 <= 0) {
 				tokenAmount_t7.setText("0");
 			} else {
@@ -391,7 +392,7 @@ public class AssistantView {
 			}
 			break;
 		case "t8":
-			int t8 = controller.onUpdateRequested(tokenAmount_t8, result);
+			long t8 = controller.onUpdateRequested(tokenAmount_t8, result);
 			if (t8 <= 0) {
 				tokenAmount_t8.setText("0");
 			} else {
@@ -399,7 +400,7 @@ public class AssistantView {
 			}
 			break;
 		case "addMinusCard":
-			int card0 = controller.onUpdateRequested(cardAmount_0, result);
+			long card0 = controller.onUpdateRequested(cardAmount_0, result);
 			if (card0 <= 0) {
 				cardAmount_0.setText("0");
 			} else {
